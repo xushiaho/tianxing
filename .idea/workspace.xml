@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b93df1c6-e26a-45b7-8de9-2bc5a0bb9e7f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="ProjectId" id="1VOBEKoYDnnJXmBwjebJrAUvc4h" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:80/index" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.TianxingApplication#1">
+    <configuration name="TianxingApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/TianxingApplication.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="TianxingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="tianxing" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianxing.TianxingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.TianxingApplication#1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b93df1c6-e26a-45b7-8de9-2bc5a0bb9e7f" name="Default Changelist" comment="" />
+      <created>1577114147872</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577114147872</updated>
+      <workItem from="1577114150647" duration="2268000" />
+    </task>
+    <task id="LOCAL-00001" summary="页面">
+      <created>1577116126158</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577116126158</updated>
+    </task>
+    <task id="LOCAL-00002" summary="页面1">
+      <created>1577116425137</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577116425137</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="页面" />
+    <MESSAGE value="页面1" />
+    <option name="LAST_COMMIT_MESSAGE" value="页面1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="181" key="#Inspections" timestamp="1577114709694">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="181" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1577114709694" />
+    <state x="572" y="119" key="CommitChangelistDialog2" timestamp="1577116419830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="572" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577116419830" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1577115591265">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591265" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1577115591264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591264" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1577115591264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591264" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1577115591265">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591265" />
+    <state width="938" height="282" key="GridCell.Tab.1.bottom" timestamp="1577115035218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577115035218" />
+    <state width="938" height="282" key="GridCell.Tab.1.center" timestamp="1577115035218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577115035218" />
+    <state width="938" height="282" key="GridCell.Tab.1.left" timestamp="1577115035218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577115035218" />
+    <state width="938" height="282" key="GridCell.Tab.1.right" timestamp="1577115035218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577115035218" />
+    <state x="440" y="97" key="SettingsEditor" timestamp="1577114660594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="97" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577114660594" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1577116128274">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577116128274" />
+  </component>
+</project>
