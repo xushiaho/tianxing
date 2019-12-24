@@ -3,6 +3,8 @@ package com.tianxing.system.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
+import java.util.List;
+
 import com.tianxing.common.entity.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -56,6 +58,21 @@ public class SysUser extends BaseEntity {
     @ApiModelProperty(value = "盐值")
     private String salt;
 
+    @ApiModelProperty(value = "部门对象")
+    private SysDept dept;
 
+    @ApiModelProperty(value = "角色组")
+    private List<SysRole> roles;
+
+    public SysDept getDept() {
+        if (dept == null){
+            dept = new SysDept();
+        }
+        return dept;
+    }
+
+    public void setDept(SysDept dept) {
+        this.dept = dept;
+    }
 
 }
