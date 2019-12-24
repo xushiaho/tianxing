@@ -4,26 +4,51 @@
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.tianxing.system.entity.SysUser">
-                <id column="user_id"      property="userId"        />
-                <result column="username"      property="username"    />
-                <result column="password"      property="password"    />
-                <result column="phone"      property="phone"    />
-                <result column="email"      property="email"    />
-                <result column="avatar"      property="avatar"    />
-                <result column="flag"      property="flag"    />
-                <result column="token"      property="token"    />
-                <result column="salt"      property="salt"    />
-                <result column="create_by"      property="createBy"    />
-                <result column="create_time"      property="createTime"    />
-                <result column="update_by"      property="updateBy"    />
-                <result column="update_time"      property="updateTime"    />
-                <result column="remark"      property="remark"    />
+        <id column="user_id"      property="userId"        />
+        <result column="username"      property="username"    />
+        <result column="password"      property="password"    />
+        <result column="phone"      property="phone"    />
+        <result column="email"      property="email"    />
+        <result column="avatar"      property="avatar"    />
+        <result column="flag"      property="flag"    />
+        <result column="token"      property="token"    />
+        <result column="salt"      property="salt"    />
+        <result column="create_by"      property="createBy"    />
+        <result column="create_time"      property="createTime"    />
+        <result column="update_by"      property="updateBy"    />
+        <result column="update_time"      property="updateTime"    />
+        <result column="remark"      property="remark"    />
+        <association property="dept"    column="dept_id" javaType="SysDept" resultMap="deptResult" />
+        <collection  property="roles"   javaType="java.util.List"        resultMap="RoleResult" />
+    </resultMap>
+
+    <resultMap id="deptResult" type="SysDept">
+        <id     property="deptId"   column="dept_id"     />
+        <result property="parentId" column="parent_id"   />
+        <result property="deptName" column="dept_name"   />
+        <result property="orderNum" column="order_num"   />
+        <result property="leader"   column="leader"      />
+        <result property="status"   column="dept_status" />
+    </resultMap>
+
+    <resultMap id="RoleResult" type="SysRole">
+        <id     property="roleId"       column="role_id"        />
+        <result property="roleName"     column="role_name"      />
+        <result property="roleKey"      column="role_key"       />
+        <result property="roleSort"     column="role_sort"      />
+        <result property="dataScope"     column="data_scope"    />
+        <result property="status"       column="role_status"    />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="selectSysUserVo">
-        select
-        user_id, username, password, phone, email, avatar, flag, token, salt, create_by, create_time, update_by, update_time, remark from sysUser
+        select u.user_id,u.dept_id, u.username, u.password, u.phone, u.email, u.avatar, u.flag, u.token, u.salt, u.create_by, u.create_time, u.update_by, u.update_time, u.remark
+        d.dept_id, d.parent_id, d.dept_name, d.order_num, d.leader, d.status as dept_status,
+        r.role_id, r.role_name, r.role_key, r.role_sort, r.data_scope, r.status as role_status
+        from sys_user u
+            left join sys_dept d on u.dept_id = d.dept_id
+		    left join sys_user_role ur on u.user_id = ur.user_id
+		    left join sys_role r on r.role_id = ur.role_id
     </sql>
 
 
