@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/SysUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysUserMapper.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +153,8 @@
       <updated>1577114147872</updated>
       <workItem from="1577114150647" duration="2567000" />
       <workItem from="1577152077218" duration="11027000" />
-      <workItem from="1577251298604" duration="3836000" />
+      <workItem from="1577251298604" duration="4663000" />
+      <workItem from="1577266066710" duration="264000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -189,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577172294346</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="补充用户xml信息">
+      <created>1577263436649</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577263436649</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +214,8 @@
     <MESSAGE value="页面" />
     <MESSAGE value="页面1" />
     <MESSAGE value="删除页面信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除页面信息" />
+    <MESSAGE value="补充用户xml信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="补充用户xml信息" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">
