@@ -2,6 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tianxing.system.mapper.SysDictTypeMapper">
 
+
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.tianxing.system.entity.SysDictType">
                 <id column="dict_id"      property="dictId"        />
@@ -18,9 +19,12 @@
     <!-- 通用查询结果列 -->
     <sql id="selectSysDictTypeVo">
         select
-        dict_id, dict_name, dict_type, status, create_by, create_time, update_by, update_time, remark from sysDictType
+        dict_id, dict_name, dict_type, status, create_by, create_time, update_by, update_time, remark from sys_dict
     </sql>
 
+    <select id="selectSysDictTypeList" parameterType="com.tianxing.system.entity.SysDictType" resultMap="BaseResultMap">
+        <include refid="selectSysDictTypeVo"/>
+    </select>
 
     <!-- 校验字典名是否唯一 -->
     <select id="checkSysDictTypeName" parameterType="String" resultType="int">

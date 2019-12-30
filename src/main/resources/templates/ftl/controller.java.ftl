@@ -55,7 +55,7 @@ public class ${table.controllerName} {
     @ResponseBody
     public ApiResult list(){
         Page< ${entity}> page = new Page< ${entity}>();
-        return new ApiResult(${table.serviceName?uncap_first}.page(page, Wrappers.emptyWrapper()));
+        return new ApiResult(${table.serviceName?uncap_first}.select${entity}List(page));
     }
 
     /**

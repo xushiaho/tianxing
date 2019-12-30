@@ -2,11 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="${package.Mapper}.${table.mapperName}">
 
-<#if enableCache>
-    <!-- 开启二级缓存 -->
-    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+    <#if enableCache>
+        <!-- 开启二级缓存 -->
+        <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
 
-</#if>
+    </#if>
+
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
         <#list table.fields as field>
@@ -30,9 +31,12 @@
         <#list table.commonFields as field>
         ${field.name},
         </#list>
-        ${table.fieldNames} from ${table.entityPath}
+        ${table.fieldNames} from sys_${entity[3..6]?uncap_first}
     </sql>
 
+    <select id="select${entity}List" parameterType="${package.Entity}.${entity}" resultMap="BaseResultMap">
+        <include refid="select${entity}Vo"/>
+    </select>
 
     <!-- 校验${table.comment!?substring(0,2)}名是否唯一 -->
     <select id="check${entity}Name" parameterType="String" resultType="int">

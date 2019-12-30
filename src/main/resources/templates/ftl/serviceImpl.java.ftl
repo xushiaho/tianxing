@@ -7,7 +7,9 @@ import ${package.Service}.${table.serviceName};
 import ${superServiceImplClassPackage};
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
+import java.util.List;
 /**
  * <p>
  * ${table.comment!} 服务实现类
@@ -26,6 +28,16 @@ public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.m
 
     @Autowired
     private ${table.mapperName} ${table.mapperName?uncap_first};
+
+    /**
+    * 查询${table.comment!}列表
+    * @param page
+    * @return
+    */
+    @Override
+    public List<${entity}> select${entity}List(Page<${entity}> page) {
+        return ${table.mapperName?uncap_first}.select${entity}List(page);
+    }
 
     /**
     * 校验${table.comment!?substring(0,2)}名是否唯一

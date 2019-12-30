@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <!--在此配置下全局启用或禁用在任何映射器中配置的所有缓存-->
+        <setting name="cacheEnabled" value="false"/>
+        <!-- 设置驱动程序等待数据库响应的秒数 -->
+        <setting name="defaultStatementTimeout" value="5"/>
+        <!-- 驼峰式命名 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- 允许 JDBC 支持自动生成主键 -->
+        <setting name="useGeneratedKeys" value="true"/>
+    </settings>
+
+    <!-- Continue editing here -->
+
+</configuration>

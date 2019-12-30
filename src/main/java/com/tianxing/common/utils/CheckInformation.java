@@ -49,12 +49,13 @@ public class CheckInformation {
     /**
      * 接口名称是否唯一返回结果
      */
-    public static final String API_NAME_UNIQUE = "0";
-    public static final String API_NAME_NOT_UNIQUE = "1";
+    public static final String APIS_NAME_UNIQUE = "0";
+    public static final String APIS_NAME_NOT_UNIQUE = "1";
 
     /**
      * bug名称是否唯一返回结果
      */
-    public static final String BUG_NAME_UNIQUE = "0";
-    public static final String BUG_NAME_NOT_UNIQUE = "1";
+    public static final String BUGS_NAME_UNIQUE = "0";
+    public static final String BUGS_NAME_NOT_UNIQUE = "1";
+
 }

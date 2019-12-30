@@ -2,7 +2,9 @@ package ${package.Service};
 
 import ${package.Entity}.${entity};
 import ${superServiceClassPackage};
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
+import java.util.List;
 /**
  * <p>
  * ${table.comment!} 服务类
@@ -15,6 +17,13 @@ import ${superServiceClassPackage};
 interface ${table.serviceName} : ${superServiceClass}<${entity}>
 <#else>
 public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+    * 查询${table.comment!}列表
+    * @param page
+    * @return
+    */
+    List<${entity}> select${entity}List(Page<${entity}> page);
 
     /**
     * 校验${table.comment!?substring(0,2)}名是否唯一

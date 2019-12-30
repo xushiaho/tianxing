@@ -2,6 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tianxing.system.mapper.SysDeptMapper">
 
+
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.tianxing.system.entity.SysDept">
                 <id column="dept_id"      property="deptId"        />
@@ -17,22 +18,21 @@
                 <result column="create_time"      property="createTime"    />
                 <result column="update_by"      property="updateBy"    />
                 <result column="update_time"      property="updateTime"    />
+                <result column="remark"      property="remark"    />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="selectSysDeptVo">
         select
-        dept_id, parent_id, dept_name, order_num, leader, phone, email, status, del_flag, create_by, create_time, update_by, update_time from sysDept
+        dept_id, parent_id, dept_name, order_num, leader, phone, email, status, del_flag, create_by, create_time, update_by, update_time, remark from sys_dept
     </sql>
 
+    <select id="selectSysDeptList" parameterType="com.tianxing.system.entity.SysDept" resultMap="BaseResultMap">
+        <include refid="selectSysDeptVo"/>
+    </select>
 
     <!-- 校验部门名是否唯一 -->
     <select id="checkSysDeptName" parameterType="String" resultType="int">
         select count(1) from sys_dept where deptName=deptName
-    </select>
-
-    <!-- 部门节点 -->
-    <select id="findSysDeptZtree" resultType="com.tianxing.system.entity.VO.SysDeptZtreeVO">
-        select dept_id,dept_name,parent_id from sys_dept;
     </select>
 </mapper>

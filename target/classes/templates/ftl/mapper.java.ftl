@@ -2,7 +2,9 @@ package ${package.Mapper};
 
 import ${package.Entity}.${entity};
 import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
+import java.util.List;
 /**
  * <p>
  * ${table.comment!} Mapper 接口
@@ -15,6 +17,13 @@ import ${superMapperClassPackage};
 interface ${table.mapperName} : ${superMapperClass}<${entity}>
 <#else>
 public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+    * 查询${table.comment!}列表
+    * @param page
+    * @return
+    */
+    List<${entity}> select${entity}List(Page<${entity}> page);
 
      /**
      * 校验${table.comment!?substring(0,2)}名是否唯一
