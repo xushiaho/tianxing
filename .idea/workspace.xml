@@ -1,151 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/CheckInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/CheckInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysApiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysBugController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDeptController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDictDataController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDictTypeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysMenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysRoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysUserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysBug.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysDept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysDictData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysDictType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysRoleDept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysRoleMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysUserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/VO/SysDeptZtreeVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/VO/SysMenuZtreeVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysApiMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysBugMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDeptMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDictDataMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDictTypeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysMenuMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysRoleDeptMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysRoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysRoleMenuMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysUserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysUserRoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysApiService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysBugService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDeptService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDictDataService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDictTypeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysMenuService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysRoleDeptService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysRoleMenuService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysRoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysUserRoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysApiServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysBugServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDeptServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDictDataServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDictTypeServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysRoleDeptServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysRoleMenuServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysRoleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserRoleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysApiMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysBugMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDeptMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDictDataMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDictTypeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysMenuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysRoleDeptMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysRoleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysRoleMenuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysUserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysUserRoleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/controller.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.xml.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/service.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/serviceImpl.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/serviceImpl.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/common/utils/CheckInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/common/utils/CheckInformation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysApiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysBugController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysDeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysDeptController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysDictDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysDictDataController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysDictTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysDictTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysMenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysRoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysRoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysBug.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysRoleMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysRoleMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysUserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysUserRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/VO/SysDeptZtreeVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/VO/SysMenuZtreeVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysApiMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysBugMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysDeptMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysDeptMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysDictDataMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysDictDataMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysDictTypeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysDictTypeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysMenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysMenuMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysRoleDeptMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysRoleDeptMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysRoleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysRoleMenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysRoleMenuMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysUserRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysUserRoleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysApiService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysBugService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysDeptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysDeptService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysDictDataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysDictDataService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysDictTypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysDictTypeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysMenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysMenuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysRoleDeptService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysRoleMenuService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysRoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserRoleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysApiServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysBugServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysDeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysDeptServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysDictDataServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysDictDataServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysDictTypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysDictTypeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysMenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysMenuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysRoleDeptServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysRoleMenuServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysRoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysRoleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserRoleServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysApiMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysBugMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysDeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysDeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysDictDataMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysDictDataMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysDictTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysDictTypeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysRoleDeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysRoleDeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysRoleMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysRoleMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysUserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysUserRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/controller.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.xml.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/service.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/serviceImpl.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/serviceImpl.java.ftl" afterDir="false" />
-    </list>
+    <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +156,7 @@
       <workItem from="1577251298604" duration="4663000" />
       <workItem from="1577266066710" duration="296000" />
       <workItem from="1577669955251" duration="7482000" />
-      <workItem from="1577684467903" duration="4965000" />
+      <workItem from="1577684467903" duration="5215000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -344,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577266338864</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="关联查询完成">
+      <created>1577693073468</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1577693073468</updated>
+    </task>
+    <task id="LOCAL-00008" summary="关联查询完成1">
+      <created>1577693213303</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1577693213303</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +239,9 @@
     <MESSAGE value="删除页面信息" />
     <MESSAGE value="补充用户xml信息" />
     <MESSAGE value="补充用户xml信息1" />
-    <option name="LAST_COMMIT_MESSAGE" value="补充用户xml信息1" />
+    <MESSAGE value="关联查询完成" />
+    <MESSAGE value="关联查询完成1" />
+    <option name="LAST_COMMIT_MESSAGE" value="关联查询完成1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">
