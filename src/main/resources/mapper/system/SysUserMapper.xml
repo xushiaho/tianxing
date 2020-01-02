@@ -39,7 +39,6 @@
     </sql>
 
     <select id="selectSysUserList" parameterType="com.tianxing.system.entity.SysUser" resultMap="BaseResultMap">
-        <!--        <include refid="selectSysUserVo"/>-->
         select u.user_id, u.dept_id, u.username, u.password, u.phone, u.email, u.avatar, u.flag, u.token, u.salt, u.create_by, u.create_time, u.update_by, u.update_time, u.remark,d.dept_name from sys_user u
         left join sys_dept d on u.dept_id = d.dept_id
     </select>
