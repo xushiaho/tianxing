@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/entity.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/entity.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.xml.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysUserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/system/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.xml.ftl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +109,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TianxingApplication">
+  <component name="RunManager" selected="Application.CodeGenerator">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tianxing.config.CodeGenerator" />
       <module name="tianxing" />
@@ -139,8 +148,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TianxingApplication" />
         <item itemvalue="Application.CodeGenerator" />
+        <item itemvalue="Application.TianxingApplication" />
         <item itemvalue="HTTP Request.TianxingApplication#1" />
       </list>
     </recent_temporary>
@@ -161,6 +170,9 @@
       <workItem from="1577266066710" duration="296000" />
       <workItem from="1577669955251" duration="7482000" />
       <workItem from="1577684467903" duration="6148000" />
+      <workItem from="1577957770092" duration="317000" />
+      <workItem from="1578017879067" duration="11543000" />
+      <workItem from="1578043921121" duration="2628000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -225,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577693274567</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="用户关联查询修改">
+      <created>1577957865762</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1577957865762</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +272,8 @@
     <MESSAGE value="关联查询完成" />
     <MESSAGE value="关联查询完成1" />
     <MESSAGE value="关联查询完成2" />
-    <option name="LAST_COMMIT_MESSAGE" value="关联查询完成2" />
+    <MESSAGE value="用户关联查询修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户关联查询修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">

@@ -22,7 +22,21 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
     */
     List<SysUser> selectSysUserList(Page<SysUser> page);
 
-     /**
+    /**
+     * 新增用户
+     * @param sysUser
+     * @return
+     */
+    int insertSysUser(SysUser sysUser);
+
+    /**
+     * 修改用户
+     * @param sysUser
+     * @return
+     */
+    int updateSysUser(SysUser sysUser);
+
+    /**
      * 校验用户名是否唯一
      * @param userName
      * @return

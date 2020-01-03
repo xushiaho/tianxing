@@ -35,6 +35,48 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
     }
 
     /**
+     * 新增用户信息
+     * @param sysUser
+     * @return
+     */
+    @Override
+    public int insertSysUser(SysUser sysUser) {
+        return sysUserMapper.insert(sysUser);
+    }
+
+    /**
+     * 修改用户信息
+     *
+     * @param sysUser 用户信息
+     * @return 结果
+     */
+    @Override
+    public int updateSysUser(SysUser sysUser) {
+        return 0;
+    }
+
+    /**
+     * 根据用户id删除用户信息
+     * @param userId
+     * @return 结果
+     */
+    @Override
+    public int deleteSysUserById(Long userId) {
+        return 0;
+    }
+
+    /**
+     * 批量删除用户信息
+     *
+     * @param userIds 需要删除的用户ID
+     * @return 结果
+     */
+    @Override
+    public int deleteSysUserByIds(Long[] userIds) {
+        return 0;
+    }
+
+    /**
     * 校验用户名是否唯一
     * @param userName
     * @return

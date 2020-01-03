@@ -91,6 +91,7 @@ public class ${entity} implements Serializable {
     @TableLogic
     </#if>
     private ${field.propertyType} ${field.propertyName};
+    <#if (field.name=create_by)><#break></#if>
 </#list>
 <#------------  END 字段循环遍历  ---------->
 

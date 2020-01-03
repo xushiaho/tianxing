@@ -37,6 +37,12 @@
         select
         user_id, dept_id, username, password, phone, email, avatar, flag, token, salt, create_by, create_time, update_by, update_time, remark from sys_user
     </sql>
+    <insert id="insertSysUser" parameterType="com.tianxing.system.entity.SysUser" useGeneratedKeys="true" keyProperty="userId">
+
+    </insert>
+    <update id="updateSysUser" parameterType="com.tianxing.system.entity.SysUser">
+
+    </update>
 
     <select id="selectSysUserList" parameterType="com.tianxing.system.entity.SysUser" resultMap="BaseResultMap">
         select u.user_id, u.dept_id, u.username, u.password, u.phone, u.email, u.avatar, u.flag, u.token, u.salt, u.create_by, u.create_time, u.update_by, u.update_time, u.remark,d.dept_name from sys_user u
@@ -47,4 +53,5 @@
     <select id="checkSysUserName" parameterType="String" resultType="int">
         select count(1) from sys_user where userName=userName
     </select>
+>
 </mapper>
