@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,18 +85,6 @@
       <select />
     </treeState>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Application.CodeGenerator">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tianxing.config.CodeGenerator" />
@@ -141,6 +130,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -159,7 +160,8 @@
       <workItem from="1577684467903" duration="6148000" />
       <workItem from="1577957770092" duration="317000" />
       <workItem from="1578017879067" duration="11543000" />
-      <workItem from="1578043921121" duration="2898000" />
+      <workItem from="1578043921121" duration="4167000" />
+      <workItem from="1578067371100" duration="281000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -238,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578046801634</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="代码模板修改1">
+      <created>1578046886986</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578046886986</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +277,8 @@
     <MESSAGE value="关联查询完成2" />
     <MESSAGE value="用户关联查询修改" />
     <MESSAGE value="代码模板修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码模板修改" />
+    <MESSAGE value="代码模板修改1" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码模板修改1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">
