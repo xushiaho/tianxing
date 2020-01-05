@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/config/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/entity.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/entity.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.xml.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/entity.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/entity.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.xml.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +25,9 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="121" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -46,7 +63,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/ftl" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,6 +74,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\idea\java\tianxing\src\main\resources\templates\ftl" />
+    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -161,7 +183,10 @@
       <workItem from="1577957770092" duration="317000" />
       <workItem from="1578017879067" duration="11543000" />
       <workItem from="1578043921121" duration="4167000" />
-      <workItem from="1578067371100" duration="281000" />
+      <workItem from="1578067371100" duration="1870000" />
+      <workItem from="1578105042109" duration="7103000" />
+      <workItem from="1578129180616" duration="3426000" />
+      <workItem from="1578219409351" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -247,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578046886986</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="代码模板修改1">
+      <created>1578067665916</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1578067665916</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,26 +317,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1577114709694" />
-    <state x="572" y="119" key="CommitChangelistDialog2" timestamp="1577116528505">
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1578223581334">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577116528505" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1577115591265">
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578223581334" />
+    <state x="572" y="119" key="CommitChangelistDialog2" timestamp="1578067664717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591265" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1577115591264">
+    <state x="572" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578067664717" />
+    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1578134017606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591264" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1577115591264">
+    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578134017606" />
+    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1578134017606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591264" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1577115591265">
+    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578134017606" />
+    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1578134017606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591265" />
+    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578134017606" />
+    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1578134017606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578134017606" />
     <state width="938" height="282" key="GridCell.Tab.1.bottom" timestamp="1577115035218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -325,9 +361,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="97" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577114660594" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1577116533914">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1578067712345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577116533914" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578067712345" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578069090491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578069090491" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tianxing$CodeGenerator.ic" NAME="CodeGenerator Coverage Results" MODIFIED="1578126890097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.tianxing.config.*</FILTER>
+    </SUITE>
   </component>
 </project>

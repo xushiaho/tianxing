@@ -38,21 +38,6 @@ public interface ISysUserService extends IService<SysUser> {
     int updateSysUser(SysUser sysUser);
 
     /**
-     * 根据用户id删除用户信息
-     * @param userId
-     * @return 结果
-     */
-    int deleteSysUserById(Long userId);
-
-    /**
-     * 批量删除用户信息
-     *
-     * @param userIds 需要删除的用户ID
-     * @return 结果
-     */
-    int deleteSysUserByIds(Long[] userIds);
-
-    /**
     * 校验用户名是否唯一
     * @param userName
     * @return

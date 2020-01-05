@@ -106,6 +106,16 @@ public class CodeGenerator {
                 return entityFile;
             }
         });
+        templatePath = "/templates/ftl/entity.java.ftl";
+        focList.add(new FileOutConfig(templatePath) {
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                // 自定义输出文件名 + pc.getModuleName()
+                String expand = projectPath + "/src/main/java/com/tianxing/" +pc.getModuleName() + "/" + "entity";
+                String entityFile = String.format((expand + File.separator + "%s" + ".java"), tableInfo.getEntityName());
+                return entityFile;
+            }
+        });
         templatePath = "/templates/ftl/mapper.java.ftl";
         focList.add(new FileOutConfig(templatePath) {
             @Override

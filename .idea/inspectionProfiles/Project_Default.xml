@@ -34,5 +34,6 @@
     </inspection_tool>
     <inspection_tool class="MybatisMapperXml" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="MybatisMapperXmlInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="SpringJavaInjectionPointsAutowiringInspection" enabled="false" level="ERROR" enabled_by_default="false" />
   </profile>
 </component>
