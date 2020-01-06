@@ -77,7 +77,7 @@ public class ${table.controllerName} {
         }
 
         //添加${table.comment!?substring(0,2)}信息
-        ${table.serviceName?uncap_first}.save(${entity?uncap_first});
+        ${table.serviceName?uncap_first}.save${entity}(${entity?uncap_first});
         return ApiResult.ok("添加成功!");
     }
 
@@ -99,8 +99,20 @@ public class ${table.controllerName} {
         }
 
         //修改${table.comment!?substring(0,2)}信息
-        ${table.serviceName?uncap_first}.updateById(${entity?uncap_first});
+        ${table.serviceName?uncap_first}.update${entity}(${entity?uncap_first});
         return ApiResult.ok("修改成功!");
+    }
+
+    /**
+    * 根据${table.comment!?substring(0,2)}id删除${table.comment!?substring(0,2)}
+    * @param ${table.name[4..7]}Id
+    * @return
+    */
+    @RequestMapping(value = "delete", produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public ApiResult delete(Long ${table.name[4..7]}Id){
+        ${table.serviceName?uncap_first}.delete${entity}(${table.name[4..7]}Id);
+        return ApiResult.ok("删除成功");
     }
 
     /**
