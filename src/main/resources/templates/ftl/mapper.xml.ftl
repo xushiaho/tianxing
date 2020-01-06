@@ -33,10 +33,24 @@
     <!-- 查询${table.comment!?substring(0,2)}列表 -->
     <select id="select${entity}List" parameterType="${package.Entity}.${entity}" resultMap="BaseResultMap">
         <include refid="select${entity}Vo"/>
+        <where>
+            <#list table.fields as field>
+            <if test="${field.propertyName} != null and ${field.propertyName} !=''">
+                AND ${field.name} like concat('%', ${"#{"+field.propertyName+"}"}, '%')
+            </if>
+            </#list>
+        </where>
     </select>
 
     <!-- 校验${table.comment!?substring(0,2)}名是否唯一 -->
     <select id="check${entity}Name" parameterType="String" resultType="int">
-        select count(1) from sys_${entity[3..6]?uncap_first} where ${entity[3..6]?uncap_first}Name=${entity[3..6]?uncap_first}Name
+        <#list table.fields as field>
+            <#if !field.keyFlag><#--生成普通字段 -->
+        select count(1) from ${table.name} where ${field.name}= ${"#{"+field.propertyName+"}"}
+            </#if>
+            <#if (field.propertyName="${entity[3..6]?uncap_first}Name")>
+                <#break >
+            </#if>
+        </#list>
     </select>
 </mapper>

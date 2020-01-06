@@ -2,22 +2,133 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/config/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/CodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/entity.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/entity.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/TianxingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/TianxingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/exception/ServiceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysApisController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysBugsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDeptController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDictDataController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDictTypeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysLogsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysProjectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysRoleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysUserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysApis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysBugs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysDept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysDictData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysDictType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysLogs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysProject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysRoleDept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysRoleMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysUserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysApisMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysBugsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDeptMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDictDataMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDictTypeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysLogsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysMenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysProjectMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysRoleDeptMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysRoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysRoleMenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysUserRoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysApisService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysBugsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDeptService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDictDataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDictTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysLogsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysMenuService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysProjectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysRoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysApisServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysBugsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDeptServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDictDataServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDictTypeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysLogsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysProjectServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysRoleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysUserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysApisMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysBugsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDictDataMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDictTypeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysLogsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysMenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysProjectMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysRoleDeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysRoleMenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysUserRoleMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.xml.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/config/CodeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/entity.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/entity.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/service.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/serviceImpl.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/serviceImpl.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/TianxingApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/TianxingApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysDeptController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysDictDataController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysDictTypeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysMenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysRoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/controller/SysUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysDept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysDictData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysDictType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysRoleDept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysRoleMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/entity/SysUserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysDeptMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysDictDataMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysDictTypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysMenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysRoleDeptMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysRoleMenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysUserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/mapper/SysUserRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysDeptService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysDictDataService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysDictTypeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysMenuService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/ISysUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysDeptServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysDictDataServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysDictTypeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysMenuServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysRoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/system/service/impl/SysUserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysDeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysDictDataMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysDictTypeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysMenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysRoleDeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysRoleMenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/system/SysUserRoleMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.xml.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/service.java.ftl" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,9 +136,6 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="121" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,7 +171,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/ftl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,12 +181,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\idea\java\tianxing\src\main\resources\templates\ftl" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -97,15 +200,27 @@
     <treeState>
       <expand>
         <path>
-          <item name="Found 38 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 5 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 38 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 5 services " type="fcff1e1b:RestServiceStructure$RootNode" />
           <item name="tianxing" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.CodeGenerator">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -152,18 +267,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -182,11 +285,7 @@
       <workItem from="1577684467903" duration="6148000" />
       <workItem from="1577957770092" duration="317000" />
       <workItem from="1578017879067" duration="11543000" />
-      <workItem from="1578043921121" duration="4167000" />
-      <workItem from="1578067371100" duration="1870000" />
-      <workItem from="1578105042109" duration="7103000" />
-      <workItem from="1578129180616" duration="3426000" />
-      <workItem from="1578219409351" duration="1470000" />
+      <workItem from="1578043921121" duration="2898000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -265,21 +364,7 @@
       <option name="project" value="LOCAL" />
       <updated>1578046801634</updated>
     </task>
-    <task id="LOCAL-00012" summary="代码模板修改1">
-      <created>1578046886986</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1578046886986</updated>
-    </task>
-    <task id="LOCAL-00013" summary="代码模板修改1">
-      <created>1578067665916</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1578067665916</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,38 +394,33 @@
     <MESSAGE value="关联查询完成2" />
     <MESSAGE value="用户关联查询修改" />
     <MESSAGE value="代码模板修改" />
-    <MESSAGE value="代码模板修改1" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码模板修改1" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码模板修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1577114709694" />
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1578223581334">
+    <state x="572" y="119" key="CommitChangelistDialog2" timestamp="1577116528505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578223581334" />
-    <state x="572" y="119" key="CommitChangelistDialog2" timestamp="1578067664717">
+    <state x="572" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577116528505" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1577115591265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578067664717" />
-    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1578134017606">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591265" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1577115591264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578134017606" />
-    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1578134017606">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591264" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1577115591264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578134017606" />
-    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1578134017606">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591264" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1577115591265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578134017606" />
-    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1578134017606">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578134017606" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577115591265" />
     <state width="938" height="282" key="GridCell.Tab.1.bottom" timestamp="1577115035218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -361,18 +441,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="97" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577114660594" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1578067712345">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1577116533914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578067712345" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578069090491">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578069090491" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tianxing$CodeGenerator.ic" NAME="CodeGenerator Coverage Results" MODIFIED="1578126890097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.tianxing.config.*</FILTER>
-    </SUITE>
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577116533914" />
   </component>
 </project>
