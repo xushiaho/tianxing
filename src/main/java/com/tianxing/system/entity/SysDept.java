@@ -16,13 +16,13 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author 许仕昊
- * @since 2020-01-06
+ * @since 2020-01-07
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@ApiModel(value="SysDeptCopy对象", description="部门表")
-public class SysDeptCopy extends BaseEntity {
+@ApiModel(value="SysDept对象", description="部门表")
+public class SysDept extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 

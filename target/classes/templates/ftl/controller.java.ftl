@@ -66,7 +66,7 @@ public class ${table.controllerName} {
     */
     @RequestMapping(value = "add", produces = "application/json;charset=utf-8")
     @ResponseBody
-    public ApiResult add ( ${entity}  ${entity?uncap_first}){
+    public ApiResult add (${entity} ${entity?uncap_first}){
 
         //添加时间
         ${entity?uncap_first}.setCreateTime(DateUtils.getNowDate());
@@ -88,7 +88,7 @@ public class ${table.controllerName} {
     */
     @RequestMapping(value = "update", produces = "application/json;charset=utf-8")
     @ResponseBody
-    public ApiResult update(${entity}  ${entity?uncap_first}){
+    public ApiResult update(${entity} ${entity?uncap_first}){
 
         //修改时间
         ${entity?uncap_first}.setUpdateTime(DateUtils.getNowDate());
