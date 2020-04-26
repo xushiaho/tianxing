@@ -29,55 +29,106 @@
     <!-- 查询部门列表 -->
     <select id="selectSysDeptList" parameterType="com.tianxing.system.entity.SysDept" resultMap="BaseResultMap">
         <include refid="selectSysDeptVo"/>
-        <where>
-            <if test="deptId != null and deptId !=''">
-                AND dept_id like concat('%', #{deptId}, '%')
-            </if>
-            <if test="parentId != null and parentId !=''">
-                AND parent_id like concat('%', #{parentId}, '%')
-            </if>
-            <if test="deptName != null and deptName !=''">
-                AND dept_name like concat('%', #{deptName}, '%')
-            </if>
-            <if test="orderNum != null and orderNum !=''">
-                AND order_num like concat('%', #{orderNum}, '%')
-            </if>
-            <if test="leader != null and leader !=''">
-                AND leader like concat('%', #{leader}, '%')
-            </if>
-            <if test="phone != null and phone !=''">
-                AND phone like concat('%', #{phone}, '%')
-            </if>
-            <if test="email != null and email !=''">
-                AND email like concat('%', #{email}, '%')
-            </if>
-            <if test="status != null and status !=''">
-                AND status like concat('%', #{status}, '%')
-            </if>
-            <if test="delFlag != null and delFlag !=''">
-                AND del_flag like concat('%', #{delFlag}, '%')
-            </if>
-            <if test="createBy != null and createBy !=''">
-                AND create_by like concat('%', #{createBy}, '%')
-            </if>
-            <if test="createTime != null and createTime !=''">
-                AND create_time like concat('%', #{createTime}, '%')
-            </if>
-            <if test="updateBy != null and updateBy !=''">
-                AND update_by like concat('%', #{updateBy}, '%')
-            </if>
-            <if test="updateTime != null and updateTime !=''">
-                AND update_time like concat('%', #{updateTime}, '%')
-            </if>
-            <if test="remark != null and remark !=''">
-                AND remark like concat('%', #{remark}, '%')
-            </if>
-        </where>
+<!--        <where>-->
+<!--            <if test="deptId != null and deptId !=''">-->
+<!--                AND dept_id like concat('%', #{deptId}, '%')-->
+<!--            </if>-->
+<!--            <if test="parentId != null and parentId !=''">-->
+<!--                AND parent_id like concat('%', #{parentId}, '%')-->
+<!--            </if>-->
+<!--            <if test="deptName != null and deptName !=''">-->
+<!--                AND dept_name like concat('%', #{deptName}, '%')-->
+<!--            </if>-->
+<!--            <if test="orderNum != null and orderNum !=''">-->
+<!--                AND order_num like concat('%', #{orderNum}, '%')-->
+<!--            </if>-->
+<!--            <if test="leader != null and leader !=''">-->
+<!--                AND leader like concat('%', #{leader}, '%')-->
+<!--            </if>-->
+<!--            <if test="phone != null and phone !=''">-->
+<!--                AND phone like concat('%', #{phone}, '%')-->
+<!--            </if>-->
+<!--            <if test="email != null and email !=''">-->
+<!--                AND email like concat('%', #{email}, '%')-->
+<!--            </if>-->
+<!--            <if test="status != null and status !=''">-->
+<!--                AND status like concat('%', #{status}, '%')-->
+<!--            </if>-->
+<!--            <if test="delFlag != null and delFlag !=''">-->
+<!--                AND del_flag like concat('%', #{delFlag}, '%')-->
+<!--            </if>-->
+<!--            <if test="createBy != null and createBy !=''">-->
+<!--                AND create_by like concat('%', #{createBy}, '%')-->
+<!--            </if>-->
+<!--            <if test="createTime != null and createTime !=''">-->
+<!--                AND create_time like concat('%', #{createTime}, '%')-->
+<!--            </if>-->
+<!--            <if test="updateBy != null and updateBy !=''">-->
+<!--                AND update_by like concat('%', #{updateBy}, '%')-->
+<!--            </if>-->
+<!--            <if test="updateTime != null and updateTime !=''">-->
+<!--                AND update_time like concat('%', #{updateTime}, '%')-->
+<!--            </if>-->
+<!--            <if test="remark != null and remark !=''">-->
+<!--                AND remark like concat('%', #{remark}, '%')-->
+<!--            </if>-->
+<!--        </where>-->
     </select>
 
     <!-- 校验部门名是否唯一 -->
     <select id="checkSysDeptName" parameterType="String" resultType="int">
         select count(1) from sys_dept where parent_id= #{parentId}
         select count(1) from sys_dept where dept_name= #{deptName}
+    </select>
+    <select id="selectsysDept" resultType="com.tianxing.system.entity.SysDept">
+        <include refid="selectSysDeptVo"/>
+        <trim prefix="WHERE" prefixOverrides="AND|OR">
+<!--            <if test='sysDept.deptName!=null and sysDept.deptName!=" "'>-->
+<!--                AND dept_name like CONCAT('%',#{sysDept.deptName},'%')-->
+<!--            </if>-->
+            <if test="sysDept.deptId != null and sysDept.deptId !=''">
+                AND dept_id like concat('%', #{sysDept.deptId }, '%')
+            </if>
+            <if test="sysDept.parentId != null and sysDept.parentId !=''">
+                AND parent_id like concat('%', #{sysDept.parentId }, '%')
+            </if>
+            <if test="sysDept.deptName != null and sysDept.deptName !=''">
+                AND dept_name like concat('%', #{sysDept.deptName }, '%')
+            </if>
+            <if test="sysDept.orderNum != null and sysDept.orderNum !=''">
+                AND order_num like concat('%', #{sysDept.orderNum }, '%')
+            </if>
+            <if test="sysDept.leader != null and sysDept.leader !=''">
+                AND leader like concat('%', #{sysDept.leader }, '%')
+            </if>
+            <if test="sysDept.phone != null and sysDept.phone !=''">
+                AND phone like concat('%', #{sysDept.phone }, '%')
+            </if>
+            <if test="sysDept.email != null and sysDept.email !=''">
+                AND email like concat('%', #{sysDept.email }, '%')
+            </if>
+            <if test="sysDept.status != null and sysDept.status !=''">
+                AND status like concat('%', #{sysDept.status }, '%')
+            </if>
+            <if test="sysDept.delFlag != null and sysDept.delFlag !=''">
+                AND del_flag like concat('%', #{sysDept.delFlag }, '%')
+            </if>
+            <if test="sysDept.createBy != null and sysDept.createBy !=''">
+                AND create_by like concat('%', #{sysDept.createBy }, '%')
+            </if>
+            <if test="sysDept.createTime != null and sysDept.createTime !=''">
+                AND create_time like concat('%', #{sysDept.createTime }, '%')
+            </if>
+            <if test="sysDept.updateBy != null and sysDept.updateBy !=''">
+                AND update_by like concat('%', #{sysDept.updateBy }, '%')
+            </if>
+            <if test="sysDept.updateTime != null and sysDept.updateTime !=''">
+                AND update_time like concat('%', #{sysDept.updateTime }, '%')
+            </if>
+            <if test="sysDept.remark != null and sysDept.remark !=''">
+                AND remark like concat('%', #{sysDept.remark }, '%')
+            </if>
+
+        </trim>
     </select>
 </mapper>

@@ -1,8 +1,11 @@
 package com.tianxing.system.controller;
 
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.tianxing.common.entity.PageVo;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -41,6 +44,12 @@ public class SysDeptController extends BaseController {
         return new ApiResult(iSysDeptService.selectSysDeptList(page));
     }
 
+    @RequestMapping(value = "selectlist", produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public Object selectlist(@ModelAttribute SysDept sysDept,@ModelAttribute PageVo pageVo){
+        Page selectsysDept = iSysDeptService.selectsysDept(sysDept, pageVo);
+        return selectsysDept;
+    }
     /**
     * 新增部门信息
     *

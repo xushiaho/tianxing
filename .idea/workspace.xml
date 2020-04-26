@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="代码模板修改">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="代码模板修改0107">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/entity/PageVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDeptCopyController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysDeptCopy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDeptCopyMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDeptCopyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDeptCopyServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDeptCopyMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/controller.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/controller.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDeptMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDeptCopyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDeptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDeptMapper.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,10 +51,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="MyBatisLogPluginindexNum" value="5" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,7 +68,11 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -85,10 +91,10 @@
     <treeState>
       <expand>
         <path>
-          <item name="Found 5 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 12 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 5 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 12 services " type="fcff1e1b:RestServiceStructure$RootNode" />
           <item name="tianxing" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
@@ -107,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CodeGenerator">
+  <component name="RunManager" selected="Application.TianxingApplication">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tianxing.config.CodeGenerator" />
       <module name="tianxing" />
@@ -146,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="Application.TianxingApplication" />
+        <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="HTTP Request.TianxingApplication#1" />
       </list>
     </recent_temporary>
@@ -171,6 +177,17 @@
       <workItem from="1577957770092" duration="317000" />
       <workItem from="1578017879067" duration="11543000" />
       <workItem from="1578043921121" duration="2898000" />
+      <workItem from="1580623315944" duration="2349000" />
+      <workItem from="1580633035839" duration="4970000" />
+      <workItem from="1585213528489" duration="45000" />
+      <workItem from="1586242411802" duration="352000" />
+      <workItem from="1586263436743" duration="103000" />
+      <workItem from="1586264894247" duration="1228000" />
+      <workItem from="1587864106045" duration="40000" />
+      <workItem from="1587870447813" duration="700000" />
+      <workItem from="1587878537448" duration="9363000" />
+      <workItem from="1587891129304" duration="647000" />
+      <workItem from="1587892263265" duration="2945000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -249,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578046801634</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="代码模板修改0107">
+      <created>1578391417324</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578391417324</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +303,8 @@
     <MESSAGE value="关联查询完成2" />
     <MESSAGE value="用户关联查询修改" />
     <MESSAGE value="代码模板修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码模板修改" />
+    <MESSAGE value="代码模板修改0107" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码模板修改0107" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">
