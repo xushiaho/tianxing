@@ -33,12 +33,12 @@ public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.m
 
     /**
     * 查询${table.comment!?substring(0,2)}列表
-    * @param page
+    * @param ${entity?uncap_first}
     * @return
     */
     @Override
-    public List<${entity}> select${entity}List(Page<${entity}> page) {
-        return ${table.mapperName?uncap_first}.select${entity}List(page);
+    public List<${entity}> select${entity}List(${entity} ${entity?uncap_first}) {
+        return ${table.mapperName?uncap_first}.select${entity}List(${entity?uncap_first});
     }
 
     /**

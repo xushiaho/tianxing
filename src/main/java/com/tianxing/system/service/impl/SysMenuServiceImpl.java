@@ -1,12 +1,7 @@
 package com.tianxing.system.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import com.tianxing.common.exception.MyException;
 import com.tianxing.common.utils.CheckInformation;
-import com.tianxing.system.entity.SysDept;
 import com.tianxing.system.entity.SysMenu;
 import com.tianxing.system.mapper.SysMenuMapper;
 import com.tianxing.system.service.ISysMenuService;
@@ -36,12 +31,16 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
 
 
     @Override
-    public List<Map> findAll(Integer menuId) {
+    public List<Map> findAll(SysMenu sysMenu) {
         Map map = new HashMap<>();
-        map.put("menuId",menuId);
+        map.put("menuId",sysMenu.getMenuId());
         return sysMenuMapper.findAll(map);
     }
 
+    @Override
+    public List<SysMenu> findAll1(SysMenu sysMenu) {
+        return sysMenuMapper.findAll1(sysMenu);
+    }
 
 
     /**

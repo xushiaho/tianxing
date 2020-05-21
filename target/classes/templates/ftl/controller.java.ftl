@@ -19,7 +19,7 @@ import org.springframework.stereotype.Controller;
 <#if superControllerClassPackage??>
 import ${superControllerClassPackage};
 </#if>
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * <p>
@@ -53,9 +53,8 @@ public class ${table.controllerName} {
     */
     @RequestMapping(value = "list", produces = "application/json;charset=utf-8")
     @ResponseBody
-    public ApiResult list(){
-        Page< ${entity}> page = new Page< ${entity}>();
-        return new ApiResult(${table.serviceName?uncap_first}.select${entity}List(page));
+    public List<${entity}> list(${entity} ${entity?uncap_first}){
+        return ${table.serviceName?uncap_first}.select${entity}List(${entity?uncap_first});
     }
 
     /**

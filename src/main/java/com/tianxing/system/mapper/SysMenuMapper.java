@@ -19,6 +19,8 @@ public interface SysMenuMapper extends BaseMapper<SysMenu> {
 
     List<Map> findAll(Map param);
 
+    List<SysMenu> findAll1(SysMenu sysMenu);
+
     /**
     * 查询菜单权限表列表
     * @param page

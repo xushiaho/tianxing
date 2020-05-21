@@ -1,14 +1,8 @@
 package com.tianxing.system.service;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.toolkit.Constants;
-import com.github.pagehelper.PageInfo;
-import com.tianxing.system.entity.SysDept;
 import com.tianxing.system.entity.SysMenu;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -23,7 +17,8 @@ import java.util.Map;
  */
 public interface ISysMenuService extends IService<SysMenu> {
 
-    List<Map> findAll(Integer menuId);
+    List<Map> findAll(SysMenu sysMenu);
+    List<SysMenu> findAll1(SysMenu sysMenu);
     /**
     * 查询菜单权限表列表
     * @param page

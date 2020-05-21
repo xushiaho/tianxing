@@ -1,13 +1,8 @@
 package com.tianxing.system.service;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.toolkit.Constants;
-import com.tianxing.common.entity.PageVo;
 import com.tianxing.system.entity.SysDept;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 /**
@@ -16,18 +11,16 @@ import java.util.List;
  * </p>
  *
  * @author 许仕昊
- * @since 2020-01-07
+ * @since 2020-05-21
  */
 public interface ISysDeptService extends IService<SysDept> {
 
     /**
     * 查询部门表列表
-    * @param page
+    * @param sysDept
     * @return
     */
-    List<SysDept> selectSysDeptList(Page<SysDept> page);
-
-    Page selectsysDept(SysDept sysDept, PageVo pageVo);
+    List<SysDept> selectSysDeptList(SysDept sysDept);
 
     /**
     * 新增部门

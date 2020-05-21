@@ -20,10 +20,10 @@ public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
 
     /**
     * 查询${table.comment!}列表
-    * @param page
+    * @param ${entity?uncap_first}
     * @return
     */
-    List<${entity}> select${entity}List(Page<${entity}> page);
+    List<${entity}> select${entity}List(${entity} ${entity?uncap_first});
 
     /**
     * 新增${table.comment!?substring(0,2)}

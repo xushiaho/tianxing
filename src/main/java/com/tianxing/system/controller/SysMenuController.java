@@ -36,8 +36,13 @@ public class SysMenuController extends BaseController {
     private ISysMenuService iSysMenuService;
 
     @RequestMapping("findAll")
-    public List<Map> findAll(Integer menuId){
-        return iSysMenuService.findAll(menuId);
+    public List<Map> findAll(SysMenu sysMenu){
+        return iSysMenuService.findAll(sysMenu);
+    }
+
+    @RequestMapping("findAll1")
+    public List<SysMenu> findAll1(SysMenu sysMenu){
+        return iSysMenuService.findAll1(sysMenu);
     }
 
     /**
