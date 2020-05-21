@@ -1,11 +1,8 @@
 package com.tianxing.system.controller;
 
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.tianxing.common.entity.PageVo;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,7 +13,7 @@ import com.tianxing.system.entity.SysDept;
 import com.tianxing.system.service.ISysDeptService;
 import org.springframework.web.bind.annotation.RestController;
 import com.tianxing.common.controller.BaseController;
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * <p>
@@ -24,7 +21,7 @@ import java.util.Arrays;
  * </p>
  *
  * @author 许仕昊
- * @since 2020-01-07
+ * @since 2020-05-21
  */
 @RestController
 @RequestMapping("/system/sysDept/")
@@ -39,17 +36,10 @@ public class SysDeptController extends BaseController {
     */
     @RequestMapping(value = "list", produces = "application/json;charset=utf-8")
     @ResponseBody
-    public ApiResult list(){
-        Page< SysDept> page = new Page< SysDept>();
-        return new ApiResult(iSysDeptService.selectSysDeptList(page));
+    public List<SysDept> list(SysDept sysDept){
+        return iSysDeptService.selectSysDeptList(sysDept);
     }
 
-    @RequestMapping(value = "selectlist", produces = "application/json;charset=utf-8")
-    @ResponseBody
-    public Object selectlist(@ModelAttribute SysDept sysDept,@ModelAttribute PageVo pageVo){
-        Page selectsysDept = iSysDeptService.selectsysDept(sysDept, pageVo);
-        return selectsysDept;
-    }
     /**
     * 新增部门信息
     *

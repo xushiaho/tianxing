@@ -1,9 +1,5 @@
 package com.tianxing.system.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.tianxing.common.entity.PageVo;
 import com.tianxing.common.exception.MyException;
 import com.tianxing.common.utils.CheckInformation;
 import com.tianxing.system.entity.SysDept;
@@ -22,7 +18,7 @@ import java.util.List;
  * </p>
  *
  * @author 许仕昊
- * @since 2020-01-07
+ * @since 2020-05-21
  */
 @Service
 public class SysDeptServiceImpl extends ServiceImpl<SysDeptMapper, SysDept> implements ISysDeptService {
@@ -30,23 +26,14 @@ public class SysDeptServiceImpl extends ServiceImpl<SysDeptMapper, SysDept> impl
     @Autowired
     private SysDeptMapper sysDeptMapper;
 
-
     /**
     * 查询部门列表
-    * @param page
+    * @param sysDept
     * @return
     */
     @Override
-    public List<SysDept> selectSysDeptList(Page<SysDept> page) {
-        return sysDeptMapper.selectSysDeptList(page);
-    }
-
-    @Override
-    public Page selectsysDept(SysDept sysDept, PageVo pageVo) {
-        Wrapper<SysDept> sysDeptQueryWrapper = new QueryWrapper<>(sysDept);
-        Page<SysDept> page = new Page<>(pageVo.getPageNumber(), pageVo.getPageSize());
-        List<SysDept> sysDeptList = sysDeptMapper.selectsysDept(page, sysDept);
-        return page.setRecords(sysDeptList);
+    public List<SysDept> selectSysDeptList(SysDept sysDept) {
+        return sysDeptMapper.selectSysDeptList(sysDept);
     }
 
     /**
