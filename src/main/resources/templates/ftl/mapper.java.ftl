@@ -1,8 +1,8 @@
 package ${package.Mapper};
 
+import com.github.pagehelper.Page;
 import ${package.Entity}.${entity};
 import ${superMapperClassPackage};
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 import java.util.List;
 /**
@@ -23,7 +23,8 @@ public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
     * @param ${entity?uncap_first}
     * @return
     */
-    List<${entity}> select${entity}List(${entity} ${entity?uncap_first});
+<#--    List<${entity}> select${entity}List(${entity} ${entity?uncap_first});-->
+    Page<${entity}> select${entity}List(${entity} ${entity?uncap_first});
 
      /**
      * 校验${table.comment!?substring(0,2)}名是否唯一

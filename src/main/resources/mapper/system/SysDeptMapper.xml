@@ -80,4 +80,15 @@
         select count(1) from sys_dept where parent_id= #{parentId}
         select count(1) from sys_dept where dept_name= #{deptName}
     </select>
+    <select id="selectList" resultType="com.tianxing.system.entity.SysDept" resultMap="BaseResultMap">
+        <include refid="selectSysDeptVo"/>
+        <where>
+            <if test="deptId != null and deptId !=''">
+                AND dept_id like concat('%', #{deptId}, '%')
+            </if>
+            <if test="parentId != null and parentId !=''">
+                AND parent_id like concat('%', #{parentId}, '%')
+            </if>
+        </where>
+    </select>
 </mapper>

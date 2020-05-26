@@ -1,8 +1,8 @@
 package com.tianxing.system.mapper;
 
+import com.github.pagehelper.Page;
 import com.tianxing.system.entity.SysDept;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 import java.util.List;
 /**
@@ -22,6 +22,7 @@ public interface SysDeptMapper extends BaseMapper<SysDept> {
     */
     List<SysDept> selectSysDeptList(SysDept sysDept);
 
+    Page<SysDept> selectList(SysDept sysDept);
      /**
      * 校验部门名是否唯一
      * @param deptName

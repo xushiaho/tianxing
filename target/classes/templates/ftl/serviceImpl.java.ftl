@@ -1,5 +1,7 @@
 package ${package.ServiceImpl};
 
+
+import com.github.pagehelper.Page;
 import com.tianxing.common.exception.MyException;
 import com.tianxing.common.utils.CheckInformation;
 import ${package.Entity}.${entity};
@@ -8,7 +10,6 @@ import ${package.Service}.${table.serviceName};
 import ${superServiceImplClassPackage};
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.util.StringUtils;
 
 import java.util.List;
@@ -37,7 +38,10 @@ public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.m
     * @return
     */
     @Override
-    public List<${entity}> select${entity}List(${entity} ${entity?uncap_first}) {
+<#--    public List<${entity}> select${entity}List(${entity} ${entity?uncap_first}) {-->
+<#--        return ${table.mapperName?uncap_first}.select${entity}List(${entity?uncap_first});-->
+<#--    }-->
+    public Page<${entity}> select${entity}List(${entity} ${entity?uncap_first}) {
         return ${table.mapperName?uncap_first}.select${entity}List(${entity?uncap_first});
     }
 

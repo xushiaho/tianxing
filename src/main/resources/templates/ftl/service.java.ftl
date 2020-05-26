@@ -1,8 +1,8 @@
 package ${package.Service};
 
+import com.github.pagehelper.Page;
 import ${package.Entity}.${entity};
 import ${superServiceClassPackage};
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 import java.util.List;
 /**
@@ -23,7 +23,8 @@ public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
     * @param ${entity?uncap_first}
     * @return
     */
-    List<${entity}> select${entity}List(${entity} ${entity?uncap_first});
+<#--    List<${entity}> select${entity}List(${entity} ${entity?uncap_first});-->
+    Page<${entity}> select${entity}List(${entity} ${entity?uncap_first});
 
     /**
     * 新增${table.comment!?substring(0,2)}

@@ -2,7 +2,8 @@ package com.tianxing.system.controller;
 
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -38,6 +39,14 @@ public class SysDeptController extends BaseController {
     @ResponseBody
     public List<SysDept> list(SysDept sysDept){
         return iSysDeptService.selectSysDeptList(sysDept);
+    }
+
+    @RequestMapping(value = "list1", produces = "application/json;charset=utf-8")
+    @ResponseBody
+    public List<SysDept> list1(Integer pageNum, Integer pageSize,SysDept sysDept){
+        PageHelper.startPage(pageNum, pageSize);
+        Page<SysDept> sysDepts = iSysDeptService.getUserList(sysDept);
+        return sysDepts;
     }
 
     /**

@@ -73,4 +73,5 @@ logging:
   level:
     com.tianxing: DEBUG
 
-
+pagehelper:
+  helper-dialect: mysql

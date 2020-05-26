@@ -1,8 +1,8 @@
 package com.tianxing.system.service;
 
+import com.github.pagehelper.Page;
 import com.tianxing.system.entity.SysDept;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 import java.util.List;
 /**
@@ -22,6 +22,7 @@ public interface ISysDeptService extends IService<SysDept> {
     */
     List<SysDept> selectSysDeptList(SysDept sysDept);
 
+    Page<SysDept> getUserList(SysDept sysDept);
     /**
     * 新增部门
     * @param sysDept

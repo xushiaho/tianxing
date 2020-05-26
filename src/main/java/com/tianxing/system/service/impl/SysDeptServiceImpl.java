@@ -1,5 +1,7 @@
 package com.tianxing.system.service.impl;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.tianxing.common.exception.MyException;
 import com.tianxing.common.utils.CheckInformation;
 import com.tianxing.system.entity.SysDept;
@@ -8,7 +10,6 @@ import com.tianxing.system.service.ISysDeptService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.util.StringUtils;
 
 import java.util.List;
@@ -34,6 +35,12 @@ public class SysDeptServiceImpl extends ServiceImpl<SysDeptMapper, SysDept> impl
     @Override
     public List<SysDept> selectSysDeptList(SysDept sysDept) {
         return sysDeptMapper.selectSysDeptList(sysDept);
+    }
+
+    @Override
+    public Page<SysDept> getUserList(SysDept sysDept) {
+        Page<SysDept> sysDepts = sysDeptMapper.selectList(sysDept);
+        return sysDepts;
     }
 
     /**
