@@ -1,6 +1,5 @@
 package ${package.Controller};
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,13 +51,13 @@ public class ${table.controllerName} {
     */
     @RequestMapping(value = "list", produces = "application/json;charset=utf-8")
     @ResponseBody
-<#--    public List<${entity}> list(${entity} ${entity?uncap_first}){-->
-<#--        return ${table.serviceName?uncap_first}.select${entity}List(${entity?uncap_first});-->
-<#--    }-->
-    public Page<${entity}> list(${entity} ${entity?uncap_first},Integer pageNum, Integer pageSize){
+    public List<${entity}> list(${entity} ${entity?uncap_first},Integer pageNum, Integer pageSiz){
         PageHelper.startPage(pageNum, pageSize);
         return ${table.serviceName?uncap_first}.select${entity}List(${entity?uncap_first});
     }
+<#--    public List<${entity}> list(${entity} ${entity?uncap_first}){-->
+<#--        return ${table.serviceName?uncap_first}.select${entity}List(${entity?uncap_first});-->
+<#--    }-->
 
     /**
     * 新增${table.comment!?substring(0,2)}信息
