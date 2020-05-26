@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tianxing.system.mapper.SysRoleMapper">
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tianxing.system.entity.SysRole">
+        <id column="role_id"      property="roleId"        />
+        <result column="role_name"      property="roleName"    />
+        <result column="role_key"      property="roleKey"    />
+        <result column="role_sort"      property="roleSort"    />
+        <result column="data_scope"      property="dataScope"    />
+        <result column="status"      property="status"    />
+        <result column="del_flag"      property="delFlag"    />
+        <result column="create_by"      property="createBy"    />
+        <result column="create_time"      property="createTime"    />
+        <result column="update_by"      property="updateBy"    />
+        <result column="update_time"      property="updateTime"    />
+        <result column="remark"      property="remark"    />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="selectSysRoleVo">
+        select role_id, role_name, role_key, role_sort, data_scope, status, del_flag, create_by, create_time, update_by, update_time, remark from sys_role
+    </sql>
+
+    <!-- 查询角色列表 -->
+    <select id="selectSysRoleList" parameterType="com.tianxing.system.entity.SysRole" resultMap="BaseResultMap">
+        <include refid="selectSysRoleVo"/>
+        <where>
+            <if test="roleId != null and roleId !=''">
+                AND role_id like concat('%', #{roleId}, '%')
+            </if>
+            <if test="roleName != null and roleName !=''">
+                AND role_name like concat('%', #{roleName}, '%')
+            </if>
+            <if test="roleKey != null and roleKey !=''">
+                AND role_key like concat('%', #{roleKey}, '%')
+            </if>
+            <if test="roleSort != null and roleSort !=''">
+                AND role_sort like concat('%', #{roleSort}, '%')
+            </if>
+            <if test="dataScope != null and dataScope !=''">
+                AND data_scope like concat('%', #{dataScope}, '%')
+            </if>
+            <if test="status != null and status !=''">
+                AND status like concat('%', #{status}, '%')
+            </if>
+            <if test="delFlag != null and delFlag !=''">
+                AND del_flag like concat('%', #{delFlag}, '%')
+            </if>
+            <if test="createBy != null and createBy !=''">
+                AND create_by like concat('%', #{createBy}, '%')
+            </if>
+            <if test="createTime != null and createTime !=''">
+                AND create_time like concat('%', #{createTime}, '%')
+            </if>
+            <if test="updateBy != null and updateBy !=''">
+                AND update_by like concat('%', #{updateBy}, '%')
+            </if>
+            <if test="updateTime != null and updateTime !=''">
+                AND update_time like concat('%', #{updateTime}, '%')
+            </if>
+            <if test="remark != null and remark !=''">
+                AND remark like concat('%', #{remark}, '%')
+            </if>
+        </where>
+    </select>
+
+    <!-- 校验角色名是否唯一 -->
+    <select id="checkSysRoleName" parameterType="String" resultType="int">
+        select count(1) from sys_role where role_name= #{roleName}
+    </select>
+</mapper>

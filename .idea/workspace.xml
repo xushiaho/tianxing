@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysDeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysMenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysDeptMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysMenuMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysDeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysMenuService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysDeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/SysDeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysMenuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/controller.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/mapper.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/service.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ftl/serviceImpl.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ftl/serviceImpl.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/controller.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/service.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/serviceImpl.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/serviceImpl.java.ftl" afterDir="false" />
-    </list>
+    <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,10 +123,10 @@
     <treeState>
       <expand>
         <path>
-          <item name="Found 12 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 17 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 12 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 17 services " type="fcff1e1b:RestServiceStructure$RootNode" />
           <item name="tianxing" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
@@ -256,7 +234,7 @@
       <workItem from="1590334769766" duration="944000" />
       <workItem from="1590409800243" duration="2034000" />
       <workItem from="1590497924956" duration="264000" />
-      <workItem from="1590498237621" duration="6255000" />
+      <workItem from="1590498237621" duration="6526000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -363,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590149365352</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="代码模板修改0526">
+      <created>1590506233669</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590506233669</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +381,8 @@
     <MESSAGE value="代码模板修改0107" />
     <MESSAGE value="代码模板修改0521" />
     <MESSAGE value="代码模板修改05211" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码模板修改05211" />
+    <MESSAGE value="代码模板修改0526" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码模板修改0526" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tianxing.system.mapper.SysMenuMapper">
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tianxing.system.entity.SysMenu">
+        <id column="menu_id"      property="menuId"        />
+        <result column="menu_name"      property="menuName"    />
+        <result column="parent_id"      property="parentId"    />
+        <result column="order_num"      property="orderNum"    />
+        <result column="url"      property="url"    />
+        <result column="target"      property="target"    />
+        <result column="menu_type"      property="menuType"    />
+        <result column="visible"      property="visible"    />
+        <result column="perms"      property="perms"    />
+        <result column="icon"      property="icon"    />
+        <result column="create_by"      property="createBy"    />
+        <result column="create_time"      property="createTime"    />
+        <result column="update_by"      property="updateBy"    />
+        <result column="update_time"      property="updateTime"    />
+        <result column="remark"      property="remark"    />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="selectSysMenuVo">
+        select menu_id, menu_name, parent_id, order_num, url, target, menu_type, visible, perms, icon, create_by, create_time, update_by, update_time, remark from sys_menu
+    </sql>
+
+    <!-- 查询菜单列表 -->
+    <select id="selectSysMenuList" parameterType="com.tianxing.system.entity.SysMenu" resultMap="BaseResultMap">
+        <include refid="selectSysMenuVo"/>
+        <where>
+            <if test="menuId != null and menuId !=''">
+                AND menu_id like concat('%', #{menuId}, '%')
+            </if>
+            <if test="menuName != null and menuName !=''">
+                AND menu_name like concat('%', #{menuName}, '%')
+            </if>
+            <if test="parentId != null and parentId !=''">
+                AND parent_id like concat('%', #{parentId}, '%')
+            </if>
+            <if test="orderNum != null and orderNum !=''">
+                AND order_num like concat('%', #{orderNum}, '%')
+            </if>
+            <if test="url != null and url !=''">
+                AND url like concat('%', #{url}, '%')
+            </if>
+            <if test="target != null and target !=''">
+                AND target like concat('%', #{target}, '%')
+            </if>
+            <if test="menuType != null and menuType !=''">
+                AND menu_type like concat('%', #{menuType}, '%')
+            </if>
+            <if test="visible != null and visible !=''">
+                AND visible like concat('%', #{visible}, '%')
+            </if>
+            <if test="perms != null and perms !=''">
+                AND perms like concat('%', #{perms}, '%')
+            </if>
+            <if test="icon != null and icon !=''">
+                AND icon like concat('%', #{icon}, '%')
+            </if>
+            <if test="createBy != null and createBy !=''">
+                AND create_by like concat('%', #{createBy}, '%')
+            </if>
+            <if test="createTime != null and createTime !=''">
+                AND create_time like concat('%', #{createTime}, '%')
+            </if>
+            <if test="updateBy != null and updateBy !=''">
+                AND update_by like concat('%', #{updateBy}, '%')
+            </if>
+            <if test="updateTime != null and updateTime !=''">
+                AND update_time like concat('%', #{updateTime}, '%')
+            </if>
+            <if test="remark != null and remark !=''">
+                AND remark like concat('%', #{remark}, '%')
+            </if>
+        </where>
+    </select>
+
+    <!-- 校验菜单名是否唯一 -->
+    <select id="checkSysMenuName" parameterType="String" resultType="int">
+        select count(1) from sys_menu where menu_name= #{menuName}
+    </select>
+
+    <select id="selectList" resultType="com.tianxing.system.entity.SysMenu" resultMap="BaseResultMap">
+        <include refid="selectSysMenuVo"/>
+        <where>
+            <if test="menuId != null and menuId !=''">
+                AND menu_id like concat('%', #{menuId}, '%')
+            </if>
+            <if test="menuName != null and menuName !=''">
+                AND menu_name like concat('%', #{menuName}, '%')
+            </if>
+            <if test="parentId != null and parentId !=''">
+                AND parent_id like concat('%', #{parentId}, '%')
+            </if>
+            <if test="orderNum != null and orderNum !=''">
+                AND order_num like concat('%', #{orderNum}, '%')
+            </if>
+            <if test="url != null and url !=''">
+                AND url like concat('%', #{url}, '%')
+            </if>
+            <if test="target != null and target !=''">
+                AND target like concat('%', #{target}, '%')
+            </if>
+            <if test="menuType != null and menuType !=''">
+                AND menu_type like concat('%', #{menuType}, '%')
+            </if>
+            <if test="visible != null and visible !=''">
+                AND visible like concat('%', #{visible}, '%')
+            </if>
+            <if test="perms != null and perms !=''">
+                AND perms like concat('%', #{perms}, '%')
+            </if>
+            <if test="icon != null and icon !=''">
+                AND icon like concat('%', #{icon}, '%')
+            </if>
+            <if test="createBy != null and createBy !=''">
+                AND create_by like concat('%', #{createBy}, '%')
+            </if>
+            <if test="createTime != null and createTime !=''">
+                AND create_time like concat('%', #{createTime}, '%')
+            </if>
+            <if test="updateBy != null and updateBy !=''">
+                AND update_by like concat('%', #{updateBy}, '%')
+            </if>
+            <if test="updateTime != null and updateTime !=''">
+                AND update_time like concat('%', #{updateTime}, '%')
+            </if>
+            <if test="remark != null and remark !=''">
+                AND remark like concat('%', #{remark}, '%')
+            </if>
+        </where>
+    </select>
+</mapper>
