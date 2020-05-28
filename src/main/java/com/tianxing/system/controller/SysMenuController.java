@@ -63,7 +63,7 @@ public class SysMenuController extends BaseController {
 
         //校验菜单名是否唯一
         if (CheckInformation.MENU_NAME_NOT_UNIQUE.equals(iSysMenuService.checkSysMenuName(sysMenu.getMenuName()))){
-        return new ApiResult("新增菜单"+sysMenu.getMenuName()+"失败,菜单名已存在");
+        return ApiResult.ok("新增菜单"+sysMenu.getMenuName()+"失败,菜单名已存在");
         }
 
         //添加菜单信息
@@ -85,7 +85,7 @@ public class SysMenuController extends BaseController {
 
         //校验菜单名是否唯一
         if (CheckInformation.MENU_NAME_NOT_UNIQUE.equals(iSysMenuService.checkSysMenuName(sysMenu.getMenuName()))){
-        return new ApiResult("修改菜单"+sysMenu.getMenuName()+"失败,菜单名已存在");
+        return ApiResult.ok("修改菜单"+sysMenu.getMenuName()+"失败,菜单名已存在");
         }
 
         //修改菜单信息
@@ -114,7 +114,7 @@ public class SysMenuController extends BaseController {
     @ResponseBody
     public ApiResult deletes(@PathVariable("sysMenuId") String[] sysMenuIds){
         iSysMenuService.removeByIds(Arrays.asList(sysMenuIds));
-        return new ApiResult("删除成功");
+        return ApiResult.ok("删除成功");
     }
 
 

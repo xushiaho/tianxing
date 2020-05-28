@@ -55,7 +55,7 @@ public class SysRoleController extends BaseController {
 
         //校验角色名是否唯一
         if (CheckInformation.ROLE_NAME_NOT_UNIQUE.equals(iSysRoleService.checkSysRoleName(sysRole.getRoleName()))){
-        return new ApiResult("新增角色"+sysRole.getRoleName()+"失败,角色名已存在");
+        return ApiResult.ok("新增角色"+sysRole.getRoleName()+"失败,角色名已存在");
         }
 
         //添加角色信息
@@ -77,7 +77,7 @@ public class SysRoleController extends BaseController {
 
         //校验角色名是否唯一
         if (CheckInformation.ROLE_NAME_NOT_UNIQUE.equals(iSysRoleService.checkSysRoleName(sysRole.getRoleName()))){
-        return new ApiResult("修改角色"+sysRole.getRoleName()+"失败,角色名已存在");
+        return ApiResult.ok("修改角色"+sysRole.getRoleName()+"失败,角色名已存在");
         }
 
         //修改角色信息
@@ -106,7 +106,7 @@ public class SysRoleController extends BaseController {
     @ResponseBody
     public ApiResult deletes(@PathVariable("sysRoleId") String[] sysRoleIds){
         iSysRoleService.removeByIds(Arrays.asList(sysRoleIds));
-        return new ApiResult("删除成功");
+        return ApiResult.ok("删除成功");
     }
 
 

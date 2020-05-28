@@ -64,7 +64,7 @@ public class SysDeptController extends BaseController {
 
         //校验部门名是否唯一
         if (CheckInformation.DEPT_NAME_NOT_UNIQUE.equals(iSysDeptService.checkSysDeptName(sysDept.getDeptName()))){
-        return new ApiResult("新增部门"+sysDept.getDeptName()+"失败,部门名已存在");
+        return ApiResult.ok("新增部门"+sysDept.getDeptName()+"失败,部门名已存在");
         }
 
         //添加部门信息
@@ -86,7 +86,7 @@ public class SysDeptController extends BaseController {
 
         //校验部门名是否唯一
         if (CheckInformation.DEPT_NAME_NOT_UNIQUE.equals(iSysDeptService.checkSysDeptName(sysDept.getDeptName()))){
-        return new ApiResult("修改部门"+sysDept.getDeptName()+"失败,部门名已存在");
+        return ApiResult.ok("修改部门"+sysDept.getDeptName()+"失败,部门名已存在");
         }
 
         //修改部门信息
@@ -115,7 +115,7 @@ public class SysDeptController extends BaseController {
     @ResponseBody
     public ApiResult deletes(@PathVariable("sysDeptId") String[] sysDeptIds){
         iSysDeptService.removeByIds(Arrays.asList(sysDeptIds));
-        return new ApiResult("删除成功");
+        return ApiResult.ok("删除成功");
     }
 
 
