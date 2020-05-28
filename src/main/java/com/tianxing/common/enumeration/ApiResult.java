@@ -1,148 +1,103 @@
 package com.tianxing.common.enumeration;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
- * api返回参数
+ * <p> 返回码 </p>
  *
- * @program: tianxing
+ * @program: sc
  * @author: 许仕昊
- * @create: 2019-11-27 10:12
+ * @create: 2020-04-07 16:46
  **/
-@ApiModel(value = "API返回参数")
-public class ApiResult {
-    /**
-     * 消息内容
-     */
-    @ApiModelProperty(value = "响应消息", required = false)
+
+@Getter
+@Setter
+public class ApiResult<T> {
+    /** 成功 */
+    public static final int SUCCESS = 200;
+
+    /** 没有登录 */
+    public static final int NOT_LOGIN = 400;
+
+    /** 发生异常 */
+    public static final int EXCEPTION = 401;
+
+    /** 系统错误 */
+    public static final int SYS_ERROR = 402;
+
+    /** 参数错误 */
+    public static final int PARAMS_ERROR = 403;
+
+    /** 不支持或已经废弃 */
+    public static final int NOT_SUPPORTED = 410;
+
+    /** AuthCode错误 */
+    public static final int INVALID_AUTHCODE = 444;
+
+    /** 太频繁的调用 */
+    public static final int TOO_FREQUENT = 445;
+
+    /** 未知的错误 */
+    public static final int UNKNOWN_ERROR = 499;
+
+    private int code;
     private String message;
+    private T data;
 
-    /**
-     * 响应码：参考`ResultCode`
-     */
-    @ApiModelProperty(value = "响应码", required = true)
-    private Integer code;
 
-    /**
-     * 响应中的数据
-     */
-    @ApiModelProperty(value = "响应数据", required = false)
-    private Object data;
 
-    /***
-     * 过期
-     *
-     * @param message:
-     * @return: com.zhengqing.modules.common.dto.output.ApiResult
-     */
-    public static ApiResult expired(String message) {
-        return new ApiResult(ResultCode.UN_LOGIN.getCode(), message, null);
+    public static ApiResult build(String message) {
+        return new ApiResult();
+    }
+    public static ApiResult build(int code) {
+        return new ApiResult().code(code);
+    }
+    public static ApiResult build(int code, String message) {
+        return new ApiResult<String>().code(code).message(message);
+    }
+    public static <T> ApiResult<T> build(int code, T data) {
+        return new ApiResult<T>().code(code).data(data);
+    }
+    public static <T> ApiResult<T> build(int code, String message, T data) {
+        return new ApiResult<T>().code(code).message(message).data(data);
     }
 
-    public static ApiResult fail(String message) {
-        return new ApiResult(ResultCode.FAILURE.getCode(), message, null);
+    public ApiResult<T> code(int code) {
+        this.code = code;
+        return this;
+    }
+    public ApiResult<T> message(String message) {
+        this.message = message;
+        return this;
+    }
+    public ApiResult<T> data(T data) {
+        this.data = data;
+        return this;
     }
 
-    /***
-     * 自定义错误返回码
-     *
-     * @param code
-     * @param message:
-     * @return: com.zhengqing.modules.common.dto.output.ApiResult
-     */
-    public static ApiResult fail(Integer code, String message) {
-        return new ApiResult(code, message, null);
-    }
-
-    public static ApiResult ok(String message) {
-        return new ApiResult(ResultCode.SUCCESS.getCode(), message, null);
-    }
 
     public static ApiResult ok() {
-        return new ApiResult(ResultCode.SUCCESS.getCode(), "OK", null);
+        return build(SUCCESS);
+    }
+    public static ApiResult ok(String message) {
+        return build(SUCCESS, message);
+    }
+    public static <T> ApiResult<T> ok(T data) {
+        return build(SUCCESS, data);
+    }
+    public static <T> ApiResult<T> ok(String message, T data) {
+        return build(SUCCESS, message, data);
+    }
+    public static ApiResult err() {
+        return build(EXCEPTION);
+    }
+    public static ApiResult err(String message) {
+        return build(EXCEPTION, message);
     }
 
-    public static ApiResult build(Integer code, String msg, Object data) {
-        return new ApiResult(ResultCode.SUCCESS.getCode(), msg, data);
-    }
-
-    public static ApiResult ok(String message, Object data) {
-        return new ApiResult(ResultCode.SUCCESS.getCode(), message, data);
-    }
-
-    /**
-     * 自定义返回码
-     */
-    public static ApiResult ok(Integer code, String message) {
-        return new ApiResult(code, message);
-    }
-
-    /**
-     * 自定义
-     *
-     * @param code：验证码
-     * @param message：返回消息内容
-     * @param data：返回数据
-     * @return: com.zhengqing.modules.common.dto.output.ApiResult
-     */
-    public static ApiResult ok(Integer code, String message, Object data) {
-        return new ApiResult(code, message, data);
-    }
-
-    public ApiResult() { }
-
-    public static ApiResult build(Integer code, String msg) {
-        return new ApiResult(code, msg, null);
-    }
-
-    public ApiResult(Integer code, String msg, Object data) {
-        this.code = code;
-        this.message = msg;
-        this.data = data;
-    }
-
-    public ApiResult(Object data) {
-        this.code = ResultCode.SUCCESS.getCode();
-        this.message = "OK";
-        this.data = data;
-    }
-
-    public ApiResult(String message) {
-        this(ResultCode.SUCCESS.getCode(), message, null);
-    }
-
-    public ApiResult(String message, Integer code) {
-        this.message = message;
-        this.code = code;
-    }
-
-    public ApiResult(Integer code, String message) {
-        this.code = code;
-        this.message = message;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public Integer getCode() {
-        return code;
-    }
-
-    public void setCode(Integer code) {
-        this.code = code;
-    }
-
-    public Object getData() {
-        return data;
-    }
-
-    public void setData(Object data) {
-        this.data = data;
+    @Override
+    public String toString() {
+        return JsonUtil.to(this);
     }
 }

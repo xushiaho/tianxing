@@ -74,7 +74,7 @@ public class ${table.controllerName} {
 
         //校验${table.comment!?substring(0,2)}名是否唯一
         if (CheckInformation.${entity[3..6]?upper_case}_NAME_NOT_UNIQUE.equals(${table.serviceName?uncap_first}.check${entity}Name(${entity?uncap_first}.${"get${entity[3..6]}Name"}()))){
-        return new ApiResult("新增${table.comment!?substring(0,2)}"+${entity?uncap_first}.${"get${entity[3..6]}Name"}()+"失败,${table.comment!?substring(0,2)}名已存在");
+        return ApiResult.ok("新增${table.comment!?substring(0,2)}"+${entity?uncap_first}.${"get${entity[3..6]}Name"}()+"失败,${table.comment!?substring(0,2)}名已存在");
         }
 
         //添加${table.comment!?substring(0,2)}信息
@@ -96,7 +96,7 @@ public class ${table.controllerName} {
 
         //校验${table.comment!?substring(0,2)}名是否唯一
         if (CheckInformation.${entity[3..6]?upper_case}_NAME_NOT_UNIQUE.equals(${table.serviceName?uncap_first}.check${entity}Name(${entity?uncap_first}.${"get${entity[3..6]}Name"}()))){
-        return new ApiResult("修改${table.comment!?substring(0,2)}"+${entity?uncap_first}.${"get${entity[3..6]}Name"}()+"失败,${table.comment!?substring(0,2)}名已存在");
+        return ApiResult.ok("修改${table.comment!?substring(0,2)}"+${entity?uncap_first}.${"get${entity[3..6]}Name"}()+"失败,${table.comment!?substring(0,2)}名已存在");
         }
 
         //修改${table.comment!?substring(0,2)}信息
@@ -125,7 +125,7 @@ public class ${table.controllerName} {
     @ResponseBody
     public ApiResult deletes(@PathVariable("${entity?uncap_first}Id") String[] ${entity?uncap_first}Ids){
         ${table.serviceName?uncap_first}.removeByIds(Arrays.asList(${entity?uncap_first}Ids));
-        return new ApiResult("删除成功");
+        return ApiResult.ok("删除成功");
     }
 
 
