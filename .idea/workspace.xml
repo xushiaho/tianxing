@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/enumeration/JsonUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/enumeration/ApiResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/enumeration/ApiResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/enumeration/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/enumeration/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/common/enumeration/ApiResult.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/controller.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/mapper.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/service.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/service.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/serviceImpl.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/serviceImpl.java.ftl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,10 +133,10 @@
     <treeState>
       <expand>
         <path>
-          <item name="Found 23 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 17 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 23 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 17 services " type="fcff1e1b:RestServiceStructure$RootNode" />
           <item name="tianxing" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
@@ -260,7 +257,8 @@
       <workItem from="1590409800243" duration="2034000" />
       <workItem from="1590497924956" duration="264000" />
       <workItem from="1590498237621" duration="9056000" />
-      <workItem from="1590632708477" duration="3242000" />
+      <workItem from="1590632708477" duration="16374000" />
+      <workItem from="1590674864542" duration="2869000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -388,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590509380532</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="更新代码模板0528">
+      <created>1590664816845</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1590664816845</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +429,8 @@
     <MESSAGE value="代码模板修改0526" />
     <MESSAGE value="添加代码" />
     <MESSAGE value="更新代码模板" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新代码模板" />
+    <MESSAGE value="更新代码模板0528" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新代码模板0528" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">
