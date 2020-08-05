@@ -74,4 +74,7 @@ logging:
     com.tianxing: DEBUG
 
 pagehelper:
-  helper-dialect: mysql
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql

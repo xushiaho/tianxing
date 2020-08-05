@@ -1,6 +1,8 @@
 package com.tianxing.system.service;
 
 import com.github.pagehelper.Page;
+import com.tianxing.page.PageRequest;
+import com.tianxing.page.PageResult;
 import com.tianxing.system.entity.SysMenu;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -50,4 +52,6 @@ public interface ISysMenuService extends IService<SysMenu> {
     * @return
     */
     String checkSysMenuName(String menuName);
+
+    PageResult findPage(PageRequest pageRequest, SysMenu sysMenu);
 }

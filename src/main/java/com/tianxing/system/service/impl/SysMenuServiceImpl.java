@@ -1,8 +1,13 @@
 package com.tianxing.system.service.impl;
 
 import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.tianxing.common.exception.MyException;
 import com.tianxing.common.utils.CheckInformation;
+import com.tianxing.page.PageRequest;
+import com.tianxing.page.PageResult;
+import com.tianxing.page.PageUtils;
 import com.tianxing.system.entity.SysMenu;
 import com.tianxing.system.mapper.SysMenuMapper;
 import com.tianxing.system.service.ISysMenuService;
@@ -126,6 +131,20 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
             return CheckInformation.MENU_NAME_NOT_UNIQUE;
         }
         return CheckInformation.MENU_NAME_UNIQUE;
+    }
+
+    @Override
+    public PageResult findPage(PageRequest pageRequest, SysMenu sysMenu) {
+        return PageUtils.getPageResult(pageRequest,getPageInfo(pageRequest));
+    }
+
+    private PageInfo<SysMenu> getPageInfo(PageRequest pageRequest) {
+        int pageNum = pageRequest.getPageNum();
+        int pageSize = pageRequest.getPageSize();
+        PageHelper.startPage(pageNum, pageSize);
+        SysMenu sysMenu = new SysMenu();
+        List<SysMenu> sysMenus = sysMenuMapper.selectPage(sysMenu);
+        return new PageInfo<>(sysMenus);
     }
 
 }

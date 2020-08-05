@@ -3,6 +3,10 @@ package com.tianxing.system.controller;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.tianxing.page.PageRequest;
+import io.github.yedaxia.apidocs.ApiDoc;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -23,6 +27,11 @@ import java.util.*;
  * @author 许仕昊
  * @since 2020-05-26
  */
+
+/**
+ * 菜单表
+ */
+@Api("菜单")
 @RestController
 @RequestMapping("/system/sysMenu/")
 public class SysMenuController extends BaseController {
@@ -31,21 +40,31 @@ public class SysMenuController extends BaseController {
     private ISysMenuService iSysMenuService;
 
     /**
-    * 查询菜单列表
-    * @return
-    */
-    @RequestMapping(value = "list", produces = "application/json;charset=utf-8")
+     *
+     * @param sysMenu
+     * @return
+     */
+    @ApiOperation(value = "菜单列表")
+    @GetMapping(value = "list", produces = "application/json;charset=utf-8")
     @ResponseBody
     public List<SysMenu> list(SysMenu sysMenu){
         return iSysMenuService.selectSysMenuList(sysMenu);
     }
 
-    @RequestMapping(value = "list1", produces = "application/json;charset=utf-8")
+    /**
+     *
+     * @param pageNum
+     * @param pageSize
+     * @param sysMenu
+     * @return
+     */
+    @ApiOperation(value = "分页菜单列表")
+    @GetMapping(value = "list1", produces = "application/json;charset=utf-8")
     @ResponseBody
-    public Page<SysMenu> list1(Integer pageNum, Integer pageSize, SysMenu sysMenu){
+    public ApiResult<Page<SysMenu>> list1(Integer pageNum, Integer pageSize, SysMenu sysMenu){
         PageHelper.startPage(pageNum, pageSize);
         Page<SysMenu> sysMenus = iSysMenuService.selectList(sysMenu);
-        return sysMenus;
+        return ApiResult.ok(sysMenus);
     }
 
     /**
@@ -54,7 +73,8 @@ public class SysMenuController extends BaseController {
     * @param sysMenu
     * @return
     */
-    @RequestMapping(value = "add", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "新增菜单列表")
+    @PostMapping(value = "add", produces = "application/json;charset=utf-8")
     @ResponseBody
     public ApiResult add (SysMenu sysMenu){
 
@@ -76,7 +96,8 @@ public class SysMenuController extends BaseController {
     * @param sysMenu
     * @return
     */
-    @RequestMapping(value = "update", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "修改菜单列表")
+    @PostMapping(value = "update", produces = "application/json;charset=utf-8")
     @ResponseBody
     public ApiResult update(SysMenu sysMenu){
 
@@ -98,7 +119,7 @@ public class SysMenuController extends BaseController {
     * @param menuId
     * @return
     */
-    @RequestMapping(value = "delete", produces = "application/json;charset=utf-8")
+    @PostMapping(value = "delete", produces = "application/json;charset=utf-8")
     @ResponseBody
     public ApiResult delete(Long menuId){
         iSysMenuService.deleteSysMenu(menuId);
@@ -110,12 +131,17 @@ public class SysMenuController extends BaseController {
     * @param sysMenuIds
     * @return
     */
-    @RequestMapping(value = "deletes/{sysMenuId}", produces = "application/json;charset=utf-8")
+    @PostMapping(value = "deletes/{sysMenuId}", produces = "application/json;charset=utf-8")
     @ResponseBody
     public ApiResult deletes(@PathVariable("sysMenuId") String[] sysMenuIds){
         iSysMenuService.removeByIds(Arrays.asList(sysMenuIds));
         return ApiResult.ok("删除成功");
     }
 
-
+    @ApiOperation(value = "分页查询")
+//    @PostMapping(value="/findPage")
+    @PostMapping(value = "/findPage", produces = "application/json;charset=utf-8")
+    public Object findPage(@RequestBody PageRequest pageQuery,SysMenu sysMenu) {
+        return iSysMenuService.findPage(pageQuery,sysMenu);
+    }
 }

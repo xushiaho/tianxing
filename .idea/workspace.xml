@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/Swagger2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/enumeration/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/enumeration/JsonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/common/enumeration/ApiResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ftl/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ftl/controller.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/CheckInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/CheckInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/SysMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/common/utils/CheckInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/common/utils/CheckInformation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tianxing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tianxing.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +97,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="MyBatisLogPluginindexNum" value="109" />
+    <property name="MyBatisLogPluginindexNum" value="292" />
     <property name="MyBatisLogPluginparameters" value="Parameters:" />
     <property name="MyBatisLogPluginpreparing" value="Preparing:" />
     <property name="MyBatisLogPluginrunning" value="true" />
@@ -95,7 +108,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/tianxing/common/enumeration" />
+    <property name="last_opened_file_path" value="G:/upload" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -106,14 +119,18 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.sjhy.plugin.ui.TypeMapperSetting" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\tianxing\src\main\resources\templates\ftl" />
       <recent name="E:\java\tianxing\src\main\java\com\tianxing\common\enumeration" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java\tianxing\src\main\resources\mapper\system" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -133,10 +150,10 @@
     <treeState>
       <expand>
         <path>
-          <item name="Found 17 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 24 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 17 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 24 services " type="fcff1e1b:RestServiceStructure$RootNode" />
           <item name="tianxing" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
@@ -155,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TianxingApplication">
+  <component name="RunManager" selected="Application.TianxingApplication">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tianxing.config.CodeGenerator" />
       <module name="tianxing" />
@@ -169,12 +186,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tianxing.api.Test" />
+      <module name="tianxing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tianxing.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TianxingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tianxing.TianxingApplication" />
       <module name="tianxing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tianxing.*" />
+          <option name="PATTERN" value="com.tianxing.system.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,10 +222,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="Application.TianxingApplication" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="HTTP Request.TianxingApplication#1" />
+      <item itemvalue="Spring Boot.TianxingApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="Application.TianxingApplication" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="HTTP Request.TianxingApplication#1" />
       </list>
     </recent_temporary>
@@ -258,7 +296,24 @@
       <workItem from="1590497924956" duration="264000" />
       <workItem from="1590498237621" duration="9056000" />
       <workItem from="1590632708477" duration="16374000" />
-      <workItem from="1590674864542" duration="2869000" />
+      <workItem from="1590674864542" duration="3144000" />
+      <workItem from="1590757610840" duration="20713000" />
+      <workItem from="1590808990438" duration="7024000" />
+      <workItem from="1590892537433" duration="13527000" />
+      <workItem from="1591104672216" duration="4105000" />
+      <workItem from="1591114994322" duration="57000" />
+      <workItem from="1591280442146" duration="1222000" />
+      <workItem from="1592318069952" duration="1223000" />
+      <workItem from="1592401967572" duration="601000" />
+      <workItem from="1592670815980" duration="2124000" />
+      <workItem from="1592748020694" duration="249000" />
+      <workItem from="1592918194094" duration="8018000" />
+      <workItem from="1593182323887" duration="284000" />
+      <workItem from="1594042777174" duration="2735000" />
+      <workItem from="1594129345628" duration="4475000" />
+      <workItem from="1594483309141" duration="121000" />
+      <workItem from="1595179439762" duration="855000" />
+      <workItem from="1596650143862" duration="1688000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -393,7 +448,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590664816845</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="更新代码模板05281">
+      <created>1590680397891</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1590680397891</updated>
+    </task>
+    <task id="LOCAL-00021" summary="修改自定义异常类">
+      <created>1590680559987</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1590680559987</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +499,9 @@
     <MESSAGE value="添加代码" />
     <MESSAGE value="更新代码模板" />
     <MESSAGE value="更新代码模板0528" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新代码模板0528" />
+    <MESSAGE value="更新代码模板05281" />
+    <MESSAGE value="修改自定义异常类" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改自定义异常类" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">

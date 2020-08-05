@@ -27,6 +27,8 @@ public class CheckInformation {
      */
     public final static String MENU_NAME_UNIQUE = "0";
     public final static String MENU_NAME_NOT_UNIQUE = "1";
+    public final static String MenuName_UNIQUE = "0";
+    public final static String MenuName_NOT_UNIQUE = "1";
 
     /**
      * 项目名称是否唯一返回结果

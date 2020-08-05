@@ -31,4 +31,6 @@ public interface SysMenuMapper extends BaseMapper<SysMenu> {
      * @return
      */
      int checkSysMenuName(String menuName);
+
+     List<SysMenu> selectPage(SysMenu sysMenu);
  }

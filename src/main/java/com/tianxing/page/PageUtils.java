@@ -3,17 +3,22 @@ package com.tianxing.page;
 import com.github.pagehelper.PageInfo;
 
 /**
- * <p> 将分页信息封装到统一的接口 </p>
+ * <p> 分页查询工具类 </p>
  *
  * @program: tianxing
  * @author: 许仕昊
- * @create: 2020-04-26 21:34
+ * @create: 2020-08-06 01:58
  **/
 
 public class PageUtils {
 
-    public static PageResult getPageResult(PageRequest pageRequest, PageInfo<?> pageInfo){
-
+    /**
+     * 将分页信息封装到统一的接口
+     * @param pageRequest
+     * @param pageInfo
+     * @return
+     */
+    public static PageResult getPageResult(PageRequest pageRequest, PageInfo<?> pageInfo) {
         PageResult pageResult = new PageResult();
         pageResult.setPageNum(pageInfo.getPageNum());
         pageResult.setPageSize(pageInfo.getPageSize());
