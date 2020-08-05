@@ -135,14 +135,14 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
 
     @Override
     public PageResult findPage(PageRequest pageRequest, SysMenu sysMenu) {
-        return PageUtils.getPageResult(pageRequest,getPageInfo(pageRequest));
+        return PageUtils.getPageResult(pageRequest,getPageInfo(pageRequest,sysMenu));
     }
 
-    private PageInfo<SysMenu> getPageInfo(PageRequest pageRequest) {
+    private PageInfo<SysMenu> getPageInfo(PageRequest pageRequest,SysMenu sysMenu) {
         int pageNum = pageRequest.getPageNum();
         int pageSize = pageRequest.getPageSize();
         PageHelper.startPage(pageNum, pageSize);
-        SysMenu sysMenu = new SysMenu();
+//        SysMenu sysMenu = new SysMenu();
         List<SysMenu> sysMenus = sysMenuMapper.selectPage(sysMenu);
         return new PageInfo<>(sysMenus);
     }

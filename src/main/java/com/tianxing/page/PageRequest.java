@@ -1,7 +1,10 @@
 package com.tianxing.page;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * <p> 分页请求 </p>
@@ -11,7 +14,10 @@ import lombok.Data;
  * @create: 2020-08-06 01:56
  **/
 @Data
-public class PageRequest {
+@ApiModel(value="分页", description="分页")
+public class PageRequest implements Serializable {
+
+    private static final long serialVersionUID = -7663472501251984262L;
     /**
      * 当前页码
      */

@@ -141,7 +141,7 @@ public class SysMenuController extends BaseController {
     @ApiOperation(value = "分页查询")
 //    @PostMapping(value="/findPage")
     @PostMapping(value = "/findPage", produces = "application/json;charset=utf-8")
-    public Object findPage(@RequestBody PageRequest pageQuery,SysMenu sysMenu) {
+    public Object findPage(PageRequest pageQuery,SysMenu sysMenu) {
         return iSysMenuService.findPage(pageQuery,sysMenu);
     }
 }

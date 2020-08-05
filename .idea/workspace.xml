@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/config/Swagger2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/CheckInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/utils/CheckInformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/page/PageUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysMenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysMenuService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/SysMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tianxing/common/utils/CheckInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tianxing/common/utils/CheckInformation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tianxing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tianxing.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +84,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="MyBatisLogPluginindexNum" value="292" />
+    <property name="MyBatisLogPluginindexNum" value="308" />
     <property name="MyBatisLogPluginparameters" value="Parameters:" />
     <property name="MyBatisLogPluginpreparing" value="Preparing:" />
     <property name="MyBatisLogPluginrunning" value="true" />
@@ -313,7 +300,7 @@
       <workItem from="1594129345628" duration="4475000" />
       <workItem from="1594483309141" duration="121000" />
       <workItem from="1595179439762" duration="855000" />
-      <workItem from="1596650143862" duration="1688000" />
+      <workItem from="1596650143862" duration="2806000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -462,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590680559987</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="添加分页方法">
+      <created>1596651865273</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1596651865273</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +495,8 @@
     <MESSAGE value="更新代码模板0528" />
     <MESSAGE value="更新代码模板05281" />
     <MESSAGE value="修改自定义异常类" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改自定义异常类" />
+    <MESSAGE value="添加分页方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加分页方法" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">
