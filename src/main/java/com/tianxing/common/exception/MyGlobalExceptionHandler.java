@@ -34,9 +34,9 @@ public class MyGlobalExceptionHandler {
     public ApiResult myException(MyException be){
         log.error("自定义异常",be);
         if (be.getCode()!=null){
-            return ApiResult.build(be.getCode(),be.getMessage());
+            return ApiResult.fail(be.getCode(),be.getMessage());
         }
-        return ApiResult.build(be.getMessage());
+        return ApiResult.fail(be.getMessage());
     }
 
     /**
@@ -47,7 +47,7 @@ public class MyGlobalExceptionHandler {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ApiResult handleMethodArgumentNotValidException(MethodArgumentNotValidException e){
         log.error("方法参数校验"+e.getMessage(),e);
-        return ApiResult.build(e.getBindingResult().getFieldError().getDefaultMessage());
+        return ApiResult.fail(e.getBindingResult().getFieldError().getDefaultMessage());
     }
     /**
      * ValidationException
@@ -55,7 +55,7 @@ public class MyGlobalExceptionHandler {
     @ExceptionHandler(ValidationException.class)
     public ApiResult handleValidationException(ValidationException e) {
         log.error( "ValidationException:", e );
-        return ApiResult.build( e.getCause().getMessage() );
+        return ApiResult.fail( e.getCause().getMessage() );
     }
 
     /**
@@ -64,17 +64,17 @@ public class MyGlobalExceptionHandler {
     @ExceptionHandler(ConstraintViolationException.class)
     public ApiResult handleConstraintViolationException(ConstraintViolationException e) {
         log.error( "ValidationException:" + e.getMessage(), e );
-        return ApiResult.build( e.getMessage() );
+        return ApiResult.fail( e.getMessage() );
     }
 
     @ExceptionHandler(NoHandlerFoundException.class)
     public ApiResult handlerNoFoundException(Exception e) {
-        return ApiResult.build( 404, "路径不存在，请检查路径是否正确" );
+        return ApiResult.fail( 404, "路径不存在，请检查路径是否正确" );
     }
 
     @ExceptionHandler(DuplicateKeyException.class)
     public ApiResult handleDuplicateKeyException(DuplicateKeyException e) {
-        return ApiResult.build( "数据重复，请检查后提交" );
+        return ApiResult.fail( "数据重复，请检查后提交" );
     }
 
 
@@ -85,7 +85,7 @@ public class MyGlobalExceptionHandler {
     @ExceptionHandler(RuntimeException.class)
     public ApiResult handleRuntimeException(RuntimeException e) {
         LOG.error("系统异常:", e);
-        return ApiResult.build("系统异常，操作失败");
+        return ApiResult.fail("系统异常，操作失败");
     }
 
     /**
@@ -94,7 +94,7 @@ public class MyGlobalExceptionHandler {
     @ExceptionHandler(NullPointerException.class)
     public ApiResult nullPointerExceptionHandler(NullPointerException ex) {
         log.error("空指针异常:", ex);
-        return ApiResult.build("空指针异常!");
+        return ApiResult.fail("空指针异常!");
     }
 
     /**
@@ -103,7 +103,7 @@ public class MyGlobalExceptionHandler {
     @ExceptionHandler(ClassCastException.class)
     public ApiResult classCastExceptionHandler(ClassCastException ex) {
         log.error("类型转换异常:", ex);
-        return ApiResult.build("类型转换异常!");
+        return ApiResult.fail("类型转换异常!");
     }
 
     /**
@@ -112,7 +112,7 @@ public class MyGlobalExceptionHandler {
     @ExceptionHandler(ArrayIndexOutOfBoundsException.class)
     public ApiResult ArrayIndexOutOfBoundsException(ArrayIndexOutOfBoundsException ex) {
         log.error("数组越界异常:", ex);
-        return ApiResult.build("数组越界异常!");
+        return ApiResult.fail("数组越界异常!");
     }
 
     /**
@@ -121,6 +121,6 @@ public class MyGlobalExceptionHandler {
     @ExceptionHandler({Exception.class})
     public ApiResult exception(Exception ex) {
         log.error("其他错误:", ex);
-        return ApiResult.build( 500, "其他错误："+ ex );
+        return ApiResult.fail( 500, "其他错误："+ ex );
     }
 }

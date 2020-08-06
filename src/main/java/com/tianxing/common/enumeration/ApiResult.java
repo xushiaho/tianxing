@@ -47,19 +47,19 @@ public class ApiResult<T> {
 
 
 
-    public static ApiResult build(String message) {
+    public static ApiResult fail(String message) {
         return new ApiResult();
     }
-    public static ApiResult build(int code) {
+    public static ApiResult fail(int code) {
         return new ApiResult().code(code);
     }
-    public static ApiResult build(int code, String message) {
+    public static ApiResult fail(int code, String message) {
         return new ApiResult<String>().code(code).message(message);
     }
-    public static <T> ApiResult<T> build(int code, T data) {
+    public static <T> ApiResult<T> fail(int code, T data) {
         return new ApiResult<T>().code(code).data(data);
     }
-    public static <T> ApiResult<T> build(int code, String message, T data) {
+    public static <T> ApiResult<T> fail(int code, String message, T data) {
         return new ApiResult<T>().code(code).message(message).data(data);
     }
 
@@ -78,22 +78,22 @@ public class ApiResult<T> {
 
 
     public static ApiResult ok() {
-        return build(SUCCESS);
+        return fail(SUCCESS);
     }
     public static ApiResult ok(String message) {
-        return build(SUCCESS, message);
+        return fail(SUCCESS, message);
     }
     public static <T> ApiResult<T> ok(T data) {
-        return build(SUCCESS, data);
+        return fail(SUCCESS, data);
     }
     public static <T> ApiResult<T> ok(String message, T data) {
-        return build(SUCCESS, message, data);
+        return fail(SUCCESS, message, data);
     }
     public static ApiResult err() {
-        return build(EXCEPTION);
+        return fail(EXCEPTION);
     }
     public static ApiResult err(String message) {
-        return build(EXCEPTION, message);
+        return fail(EXCEPTION, message);
     }
 
     @Override
