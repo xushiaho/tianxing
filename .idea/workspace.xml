@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/enumeration/ApiResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/enumeration/ApiResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/common/exception/MyGlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tianxing/common/exception/MyGlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/controller/SysMenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/entity/SysMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/mapper/SysMenuMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/ISysMenuService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tianxing/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/system/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/system/SysMenuMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2a4867b1-53be-438f-97f3-37508f395604" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,7 +297,7 @@
       <workItem from="1594483309141" duration="121000" />
       <workItem from="1595179439762" duration="855000" />
       <workItem from="1596650143862" duration="3733000" />
-      <workItem from="1596721460897" duration="1254000" />
+      <workItem from="1596721460897" duration="1524000" />
     </task>
     <task id="LOCAL-00001" summary="页面">
       <created>1577116126158</created>
@@ -471,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596653050430</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="修改代码模板">
+      <created>1596722948518</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1596722948518</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +508,8 @@
     <MESSAGE value="修改自定义异常类" />
     <MESSAGE value="添加分页方法" />
     <MESSAGE value="分页添加模糊查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="分页添加模糊查询" />
+    <MESSAGE value="修改代码模板" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改代码模板" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Inspections" timestamp="1577114709694">
